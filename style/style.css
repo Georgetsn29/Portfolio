@@ -10,6 +10,10 @@ html {
     background-color: #222;
 }
 
+body {
+    width: 100%;
+}
+
 header {
     position: relative;
 }
@@ -78,6 +82,15 @@ header {
     transition: 0.5s;
 }
 
+.nav ul li:nth-child(5) .action {
+    color: #ffffff;
+}
+
+.nav ul li:nth-child(5) .action:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
 
 .home-main {
     position: relative;
@@ -136,6 +149,7 @@ header {
     border-radius: 30px;
     background-color: #333333;
     border: 3px solid #d5d5d5;
+    box-shadow: 0px 5px 5px #000000;
     transition: 0.5s;
 }
 
@@ -162,6 +176,7 @@ header {
     border-radius: 30px;
     background-color: #333333;
     border: 3px solid #d5d5d5;
+    box-shadow: 0px 5px 5px #000000;
     transition: 0.5s;
 }
 
@@ -226,6 +241,276 @@ footer {
     right: 57px;
     color: rgba(255, 255, 255, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+/*! contact.html !*/
+
+.main-header {
+    width: 1920px;
+    height: 229px;
+    position: absolute;
+    background: #252525;
+    top: 162px;
+    border-block: 2px solid #333333;
+}
+
+.main-header-text {
+    position: absolute;
+    width: 453px;
+    height: 45px;
+    left: 62px;
+    top: 92.5px;
+    font-size: 55px;
+    font-family: cursive;
+    color: #ffffff;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.map-background {
+    position: relative;
+    width: 16;
+    height: 146px;
+    top: 140px;
+}
+
+.google-map {
+    position: absolute;
+    width: 1678px;
+    height: 146px;
+    left: 121px;
+    top: 420px;
+    border: none;
+}
+
+.contact-info {
+    position: absolute;
+    top: 585px;
+    left: 94px;
+    width: 511px;
+    height: 350px;
+}
+
+.phone {
+    position: absolute;
+    height: 96px;
+    width: 511px;
+    top: 0;
+    left: 0;
+}
+
+.phone img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.phone-big {
+    position: absolute;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    left: 99px;
+    top: 13px;
+    color: #ffffff;
+    
+}
+
+.phone-lil {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: cursive;
+    line-height: 27px;
+    left: 99px;
+    top: 51px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.location {
+    position: absolute;
+    left: 5px;
+    top: 129px;
+    width: 506px;
+    height: 94px;
+}
+
+.location img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.location-big {
+    position: absolute;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    left: 99px;
+    top: 11px;
+    color: #ffffff;
+}
+
+.location-lil {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: cursive;
+    line-height: 27px;
+    left: 99px;
+    top: 49px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.email {
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    width: 506px;
+    height: 94px;
+}
+
+.email img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.email-big {
+    position: absolute;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    left: 99px;
+    top: 12px;
+    color: #ffffff;
+}
+
+.email-lil {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: cursive;
+    line-height: 27px;
+    left: 99px;
+    top: 50px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.contact-message {
+    position: absolute;
+    top: 604px;
+    left: 712px;
+    width: 1088px;
+    height: 378px;
+}
+
+.message-text {
+    position: absolute;
+    width: 337px;
+    height: 45px;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    font-family: cursive;
+}
+
+.text-underline {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 127px;
+    border: 2px solid #353535;
+}
+
+.text-overline {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 40px;
+    border: 2px solid #007ced;
+}
+
+form {
+    position: absolute;
+    top: 77px;
+    width: 1088px;
+    height: 301px;
+}
+
+form input {
+    height: 53px;
+    width: 512px;
+    display: grid;
+    padding: 20px;
+    margin-bottom: 26.5px;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 400;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border: 2px solid #555555;
+    border-radius: 5px;
+}
+
+form textarea {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 541px;
+   height: 212px;
+   padding: 14px;
+   font-size: 18px;
+   font-family: cursive;
+   font-weight: 400;
+   line-height: 35px;
+   background-color: transparent;
+   color: rgba(255, 255, 255, 0.5);
+   border: 2px solid #555555;
+   border-radius: 5px;
+   resize: none;
+}
+
+.submit-btn[type=submit] {
+    width: 161px;
+    height: 62px;
+    border-radius: 30px;
+    background-color: #333333;
+    border: 3px solid #d5d5d5;
+    box-shadow: 0px 5px 5px #000000;
+    transition: 0.5s;
+    color: #ffffff;
+    padding: 0;
+}
+
+.submit-btn:hover {
+    border: 3px solid #007ced; 
+    transition: 0.5s;
+}
+
+.contact-footer {
+    position: absolute;
+    top: 1012px;
+}
+
+
+
+
 
 
 
@@ -356,6 +641,190 @@ footer {
     .footer-reserved {
         top: 18.92px;
         right: 45.6;
+    }
+
+
+
+
+    /*! contact.html !*/
+
+    .main-header {
+        width: 1519.5px;
+        height: 183.2px;
+        top: 129.6px;
+    }
+
+    .main-header-text {
+        width: 362.4px;
+        height: 36px;
+        left: 49.6px;
+        top: 74px;
+        font-size: 44px;
+        line-height: 28px;
+    }
+
+    .map-background {
+        width: 12.8;
+        height: 116.8px;
+        top: 112px;
+    }
+
+    .google-map {
+        width: 1342.4px;
+        height: 116.8px;
+        left: 96.8px;
+        top: 336px;
+    }
+
+    .contact-info {
+        top: 468px;
+        left: 75.2px;
+        width: 408.8px;
+        height: 280px;
+    }
+
+    .phone {
+        height: 76.8px;
+        width: 408.8px;
+    }
+
+    .phone img {
+        width: 65.6px;
+        height: 68px;
+    }
+
+    .phone-big {
+        font-size: 16px;
+        line-height: 28px;
+        left: 79.2px;
+        top: 10.4px;        
+    }
+
+    .phone-lil {
+        font-size: 14.4px;
+        line-height: 21.6px;
+        left: 79.2px;
+        top: 40.8px;
+    }
+
+    .location {
+        left: 4px;
+        top: 103.2px;
+        width: 404.8px;
+        height: 75.2px;
+    }
+
+    .location img {
+        width: 58.4px;
+        height: 58.4px;
+    }
+
+    .location-big {
+        font-size: 16px;
+        line-height: 28px;
+        left: 79.2px;
+        top: 8.8px;
+    }
+
+    .location-lil {
+        font-size: 14.4px;
+        line-height: 21.6px;
+        left: 79.2px;
+        top: 39.2px;
+    }
+
+    .email {
+        left: 5.6px;
+        width: 404.8px;
+        height: 75.2px;
+    }
+
+    .email img {
+        width: 56px;
+        height: 55.2px;
+    }
+
+    .email-big {
+        font-size: 16px;
+        line-height: 28px;
+        left: 79.2px;
+        top: 9.6px;
+    }
+
+    .email-lil {
+        font-size: 14.4px;
+        line-height: 21.6px;
+        left: 79.2px;
+        top: 44px;
+    }
+
+    .contact-message {
+        top: 483.2px;
+        left: 569.6px;
+        width: 870.4px;
+        height: 302.4px;
+    }
+
+    .message-text {
+        width: 269.6px;
+        height: 36px;
+        font-size: 22.4px;
+        line-height: 28px;
+    }
+
+    .text-underline {
+        top: 32px;
+        width: 101.6px;
+    }
+
+    .text-overline {
+        top: 32px;
+        width: 32px;
+    }
+
+    form {
+        top: 61.6px;
+        width: 870.4px;
+        height: 240.8px;
+    }
+
+    form input {
+        height: 42.4px;
+        width: 409.6px;
+        padding: 16px;
+        margin-bottom: 21.2px;
+        font-size: 14.4px;
+        line-height: 28px;
+    }
+
+    form textarea {
+        width: 432.8px;
+        height: 169.6px;
+        padding: 11.2px;
+        font-size: 14.4px;
+        line-height: 28px;
+    }
+
+    .submit-btn {
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        border-radius: 24px;
+        border: 2.4px solid #d5d5d5;
+    }
+
+    .submit-btn:hover {
+        border: 2.4px solid #007ced;
+    }
+
+    .submit-btn a {
+        font-size: 16px;
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        padding-inline: 37.2px;
+    }
+
+    .contact-footer {
+        top: 809.6px;
     }
 
 }

@@ -1,0 +1,355 @@
+@media screen and (max-width: 1536px) {
+    
+    .logo {
+        position: relative;
+        top: 36.8px;
+        left: 48px;
+        width: 44px;
+        height: 44px;
+    }
+    
+    .logo img {
+        top: 6.4px;
+        left: 7.2px;
+        width: 26.4px;
+        height: 29.6px;
+    }
+    
+    .logo p {
+        left: 56px;
+        top: 4px;
+        font-size: 24px;
+    }
+    
+    .nav {
+        left: 857.6px;
+        width: 629.6px;
+        height: 24px;
+    }
+    
+    .nav ul li a {
+        font-size: 14.4px;
+        line-height: 28px;
+    }
+    
+    .home-main {
+        width: 1130.4px;
+        height: 422.4px;
+        top: 220.8px;
+        left: 188px;
+    }
+    
+    .img-circle {
+        width: 422.4px;
+        height: 422.4px;
+    }
+    
+    .img-circle img {
+        padding: 18px 18px;
+        width: 422.4px;
+        height: 422.4px;
+    }
+    
+    .home-lil {
+        top: 35.2px;
+        left: 488px;
+        font-size: 19.2px;
+    }
+    
+    .home-big {
+        top: 94.4px;
+        left: 488px;
+        font-size: 56px;
+    }
+    
+    .home-text {
+        top: 184px;
+        left: 488px;
+        font-size: 16px;
+    }
+    
+    .portfolio-btn {
+        top: 300.8px;
+        left: 497.6px;
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        border: 2.4px solid #d5d5d5;
+    }
+    
+    .portfolio-btn:hover {
+        border: 2.4px solid #007ced;
+    }
+    
+    .portfolio-btn a {
+        font-size: 16px;
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        padding-inline: 37.2px;
+    }
+    
+    .contact-btn {
+        top: 300.8px;
+        left: 651.2px;
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        border: 2.4px solid #d5d5d5;
+    }
+    
+    .contact-btn:hover {
+        border: 2.4px solid #007ced;
+    }
+    
+    .contact-btn a {
+        font-size: 16px;
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        padding-inline: 37.2px;
+    }
+    
+    
+    footer {
+        top: 343.2px;
+        height: 54.4px;
+    }
+    
+    .footer-social {
+        width: 148px;
+        height: 35.48px;
+        left: 48px;
+    }
+    
+    .footer-social li {
+        line-height: 28px;
+    }
+    
+    .footer-reserved {
+        top: 18.92px;
+        right: 45.6;
+    }
+
+
+
+
+    /*! contact.html !*/
+
+    .main-header {
+        width: 100%;
+        height: 183.2px;
+        top: 129.6px;
+    }
+
+    .main-header-text {
+        width: 362.4px;
+        height: 36px;
+        left: 49.6px;
+        top: 74px;
+        font-size: 44px;
+        line-height: 28px;
+    }
+
+    .map-background {
+        width: 12.8;
+        height: 116.8px;
+        top: 112px;
+    }
+
+    .google-map {
+        width: 1342.4px;
+        height: 116.8px;
+        left: 96.8px;
+        top: 336px;
+    }
+
+    .contact-info {
+        top: 468px;
+        left: 75.2px;
+        width: 408.8px;
+        height: 280px;
+    }
+
+    .phone {
+        height: 76.8px;
+        width: 408.8px;
+    }
+
+    .phone img {
+        width: 65.6px;
+        height: 68px;
+    }
+
+    .phone-big {
+        font-size: 16px;
+        line-height: 28px;
+        left: 79.2px;
+        top: 10.4px;        
+    }
+
+    .phone-lil {
+        font-size: 14.4px;
+        line-height: 21.6px;
+        left: 79.2px;
+        top: 40.8px;
+    }
+
+    .location {
+        left: 4px;
+        top: 103.2px;
+        width: 404.8px;
+        height: 75.2px;
+    }
+
+    .location img {
+        width: 58.4px;
+        height: 58.4px;
+    }
+
+    .location-big {
+        font-size: 16px;
+        line-height: 28px;
+        left: 79.2px;
+        top: 8.8px;
+    }
+
+    .location-lil {
+        font-size: 14.4px;
+        line-height: 21.6px;
+        left: 79.2px;
+        top: 39.2px;
+    }
+
+    .email {
+        left: 5.6px;
+        width: 404.8px;
+        height: 75.2px;
+    }
+
+    .email img {
+        width: 56px;
+        height: 55.2px;
+    }
+
+    .email-big {
+        font-size: 16px;
+        line-height: 28px;
+        left: 79.2px;
+        top: 9.6px;
+    }
+
+    .email-lil {
+        font-size: 14.4px;
+        line-height: 21.6px;
+        left: 79.2px;
+        top: 44px;
+    }
+
+    .contact-message {
+        top: 483.2px;
+        left: 569.6px;
+        width: 870.4px;
+        height: 302.4px;
+    }
+
+    .message-text {
+        width: 269.6px;
+        height: 36px;
+        font-size: 22.4px;
+        line-height: 28px;
+    }
+
+    .text-underline {
+        top: 32px;
+        width: 101.6px;
+    }
+
+    .text-overline {
+        top: 32px;
+        width: 32px;
+    }
+
+    form {
+        top: 61.6px;
+        width: 870.4px;
+        height: 240.8px;
+    }
+
+    form input {
+        height: 42.4px;
+        width: 409.6px;
+        padding: 16px;
+        margin-bottom: 21.2px;
+        font-size: 14.4px;
+        line-height: 28px;
+    }
+
+    form textarea {
+        width: 432.8px;
+        height: 169.6px;
+        padding: 11.2px;
+        font-size: 14.4px;
+        line-height: 28px;
+    }
+
+    .submit-btn {
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        border-radius: 24px;
+        border: 2.4px solid #d5d5d5;
+    }
+
+    .submit-btn:hover {
+        border: 2.4px solid #007ced;
+    }
+
+    .submit-btn a {
+        font-size: 16px;
+        padding-top: 10.4px;
+        padding-bottom: 15.2px;
+        padding-inline: 37.2px;
+    }
+
+    .contact-footer {
+        top: 809.6px;
+    }
+
+
+
+
+
+
+    /*! portfolio.html !*/
+
+.gallery {
+    top: 352px;
+    left: 98.4px;
+    height: 421.6px;
+    width: 1140.8px;  
+}
+
+.gallery-text {
+    width: 134.4px;
+    height: 36px;
+    font-size: 22.4px;
+    line-height: 28px;
+}
+
+.gallery-statia {
+    top: 80px;
+}
+
+.gallery-statia img {
+    border-radius: 16px;
+}
+
+.owl-dots {
+    margin-top: 16px;
+}
+
+.owl-carousel {
+    height: 400px;
+}
+
+.owl-carousel img {
+    height: 250px;
+}
+
+}

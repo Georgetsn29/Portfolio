@@ -48,7 +48,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className={styles.right} data-aos="fade-left" data-aos-delay="700">
+      <div className={styles.right} data-aos="fade-left" data-aos-delay="500">
           <span className={styles.spanColor}>&lt;span&gt;</span>
             <div className={styles.innerSpan}>
               <div>

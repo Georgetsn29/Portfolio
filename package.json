@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve out",
     "lint": "eslint",
-    "postbuild": "echo > t/.nojekyll",
+    "postbuild": "echo > out/.nojekyll",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out --nojekyll --cname georgetsn29.github.io/Portfolio/"
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "aos": "^2.3.4",

@@ -35,6 +35,7 @@ export default function Page() {
 
   return (
     <>
+
     <a href="mailto:giotsnobiladze5@gmail.com" className={styles.sideText} onClick={handleCopy} data-aos="fade-up-right" data-aos-delay="500" data-aos-easing="linear">{copied ? "Copied!" : "giotsnobiladze5@gmail.com"}</a>
 
     <section>

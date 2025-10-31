@@ -1,5 +1,5 @@
 .sideText {
-  position: absolute;
+  position: fixed;
   rotate: 90deg;
   bottom: 130px;
   left: -85px;

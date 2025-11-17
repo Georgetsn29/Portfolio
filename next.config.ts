@@ -4,9 +4,7 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
 
-  // basePath: process.env.NODE_ENV === 'production' ? '/Portfolio1' : '', 
-
-  basePath: "/Portfolio",
+  // basePath: "/Portfolio",
 
   
   images: {

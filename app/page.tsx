@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import { Target } from "lucide-react";
+import { useRouter } from 'next/navigation';
 
 
 const YOUR_BIRTH_YEAR: number = 2003; 
@@ -96,6 +97,20 @@ export default function Page() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [scrollProgress, setScrollProgress] = useState(0);
     const closeSidebar = () => setIsSidebarOpen(false);
+
+  useEffect(() => {
+    // Safety check to ensure we are running in a browser environment
+    if (typeof window !== 'undefined' && window.location.hash) {
+      
+      // 1. Get the current clean URL (pathname and search query). 
+      //    This automatically excludes the hash fragment.
+      const cleanUrl = window.location.pathname + window.location.search;
+
+      // 2. Use the native History API to replace the current URL entry.
+      //    This strips ANY hash fragment from the address bar without reloading the page.
+      window.history.replaceState(null, '', cleanUrl);
+    }
+  }, []);
 
   const handleCopy = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();

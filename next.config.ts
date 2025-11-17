@@ -1,12 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Must be present
+  output: "export",
+  reactStrictMode: true,
+
+  // 🔑 Conditional Base Path: Only apply the path when building for production/export.
+  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio1' : '', 
   
-  // 🔑 THE CRITICAL FIX: Set the base path to your repository name
-  basePath: "/Portfolio1", 
-  
-  // Optional/Recommended settings from previous steps
+  // Optional/Recommended settings
   images: {
     unoptimized: true,
   },

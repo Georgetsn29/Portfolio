@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
 
-  // basePath: "/Portfolio",
+  basePath: "/Portfolio",
 
   
   images: {

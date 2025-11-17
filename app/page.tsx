@@ -461,13 +461,13 @@ export default function Page() {
       </div>
     </section>
 
-    {/* <section className={styles.footer}>
+    <section className={styles.footer}>
       <div className={styles.footerwrapper}>
         <p>You know how to find me</p>
         <a href="mailto:giotsnobiladze5@gmail.com" className={styles.footerEmail} onClick={handleCopy}>{copied ? "Copied!" : "giotsnobiladze5@gmail.com"}</a>
         <a href="https://github.com/Georgetsn29" target="_blank" className={styles.footerGit}>build by GIORGI &lt;3</a>
       </div>
-    </section> */}
+    </section>
     </>
   );
 }

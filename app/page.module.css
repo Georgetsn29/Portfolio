@@ -457,7 +457,7 @@
 
 
 
-
+/*! Footer !*/
 
 .footer {
   width: 100%;
@@ -476,6 +476,7 @@
 .footerwrapper p {
   font-size: 18px;
   font-weight: bold;
+  line-height: 25px;
 }
 
 .footerEmail {
@@ -489,7 +490,7 @@
 }
 
 .footerGit {
-  color: #ffffff;
+  color: #ffffffc1;
   font-size: 16px;
 }
 
@@ -638,6 +639,34 @@
   line-height: 30px;
   text-align: center;
 } 
+
+
+/*! footer !*/
+
+.footer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 20px;
+  margin-top: 700px;
+}
+
+.footerEmail {
+  font-size: 26px;
+}
+
+.footerwrapper p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.footerGit {
+  color: #ffffffc1;
+  font-size: 14px;
+}
+
 }
 
 @media (min-width: 1920px) {

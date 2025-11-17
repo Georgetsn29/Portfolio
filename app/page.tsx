@@ -30,7 +30,7 @@ const calculateAge = (birthYear: number): number => {
   return age;
 };
 
-const AnimatedMenuButton = ({ isOpen, onClick }) => (
+const AnimatedMenuButton = ({ isOpen, onClick, }: { isOpen: boolean; onClick: () => void;}) => (
   <button 
     onClick={onClick}
     className={styles.menuButton}

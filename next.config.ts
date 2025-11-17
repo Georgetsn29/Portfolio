@@ -1,20 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",  // <=== Enables static exports
-  reactStrictMode: true,
-
-  // Optional: Change links `/me` -> `/me/` and match GitHub Pages paths
-  trailingSlash: true,
+  output: "export", // Must be present
   
-  // Optional: Prevent image optimization errors
+  // 🔑 THE CRITICAL FIX: Set the base path to your repository name
+  basePath: "/Portfolio1", 
+  
+  // Optional/Recommended settings from previous steps
   images: {
     unoptimized: true,
   },
-
-  // IMPORTANT: Replace 'your-repo-name' with your actual repository name
-  // If you are deploying to username.github.io (root), remove this line entirely.
-  basePath: "/Portfolio",
+  trailingSlash: true,
 };
 
 export default nextConfig;

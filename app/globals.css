@@ -39,15 +39,20 @@ body::-webkit-scrollbar-thumb {
     top: 50%;
     right: 2%;
     transform: translateY(-50%);
-    width: 6px; /* w-1.5 */
+    width: 6px;
     height: 100px;
-    border-radius: 9999px; /* rounded-full */
-    background-color: rgba(255, 255, 255, 0.1); /* bg-white/10 */
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.1);
     overflow: hidden;
     z-index: 29;
 }
 
 
+@media (max-width: 480px) {
+  .progress-track {
+    display: none;
+}
+}
 
 
 
@@ -96,7 +101,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     /* Responsive Text Sizing */
-    @media (min-width: 640px) { .george-text-container { font-size: 160px; } } /* sm */
+    @media (max-width: 640px) { .george-text-container { font-size: 90px; } } /* sm */
     @media (min-width: 768px) { .george-text-container { font-size: 170px; } } /* md */
     @media (min-width: 1024px) { .george-text-container { font-size: 190px; } } /* lg */
 

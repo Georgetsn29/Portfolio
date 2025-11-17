@@ -457,17 +457,17 @@ export default function Page() {
             <p className={styles.aboutPAproach} data-aos="fade-up" data-aos-delay="450">My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.</p>
           </div>
       </div>
-      <p className={styles.aboutPStop} data-aos="fade-up" data-aos-delay="450">i can't stop configuring my code editor</p>
+      <p className={styles.aboutPStop} data-aos="fade-up" data-aos-delay="450">I CAN&apos;T STOP CONFIGURING MY CODE EDITOR</p>
       </div>
     </section>
 
-    <section className={styles.footer}>
+    {/* <section className={styles.footer}>
       <div className={styles.footerwrapper}>
         <p>You know how to find me</p>
         <a href="mailto:giotsnobiladze5@gmail.com" className={styles.footerEmail} onClick={handleCopy}>{copied ? "Copied!" : "giotsnobiladze5@gmail.com"}</a>
         <a href="https://github.com/Georgetsn29" target="_blank" className={styles.footerGit}>build by GIORGI &lt;3</a>
       </div>
-    </section>
+    </section> */}
     </>
   );
 }

@@ -91,6 +91,49 @@ const TOTAL_STEPS = TOTAL_LETTERS * 2 + 1;
     { color: '#ffffff' }
 ];
 
+const techStackData = [
+  {
+    category: "Frontend",
+    items: [
+      { name: "HTML", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132094/tech-stack/e4ihbttbjc9fnqxtqfjk.webp" },
+      { name: "CSS", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132123/tech-stack/a8amf3ew3ncwhmgqp4ap.webp" },
+      { name: "JavaScript", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132141/tech-stack/it9gcd7lykyi0g8jydp3.webp" },
+      { name: "TypeScript", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132203/tech-stack/jiijjitzpqqlprtajrhk.webp" },
+      { name: "React", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132226/tech-stack/g5935sduhdm81jtm4jom.webp" },
+      { name: "Next.Js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133323/tech-stack/do3gzkhaca5bdyoc29u0.webp" },
+      // { name: "Tailwind CSS", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132308/tech-stack/jad7xbpdj86iun2ltk2z.webp" },
+    ]
+  },
+  // {
+  //   category: "Backend",
+  //   items: [
+  //     { name: "Supabase", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132759/tech-stack/vqocrcbbkvljocxjosxd.webp" },
+  //   ]
+  // },
+  {
+    category: "Tools",
+    items: [
+      { name: "Git", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132924/tech-stack/mhcfcbwo2jbswn71fibm.webp" },
+      { name: "GitHub", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132950/tech-stack/vwvkzjuycvulgcexomll.webp" },
+      { name: "Postman", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132971/tech-stack/hsxezphnnbqbgrt3iaa4.webp" },
+      { name: "VSCODE", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133012/tech-stack/z22vae593l42i5b0owut.webp" },
+      { name: "NPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133030/tech-stack/frmotw4echmb7rodvhzq.webp" },
+      // { name: "PNPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133049/tech-stack/kbbiqhq3mcujtlrobiiu.webp" },
+      // { name: "Yarn", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133111/tech-stack/lsuwj4a4wjjy9b80zhlh.webp" },
+      // { name: "Bun", url: "https://res.cloudinary.com/damompp1b/image/upload/v1762380323/tech-stack/itdtbhlknbmh8ezmv6kk.webp" },
+    ]
+  },
+  {
+    category: "Studying",
+    items: [
+      { name: "Node.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132513/tech-stack/zynfozlvk9xzpfgpio7l.webp" },
+      { name: "Express.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132715/tech-stack/cawxocttm1iih5znufe2.webp" },
+      // { name: "MongoDB", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132785/tech-stack/reepwudqzpvwkgw6k9bq.webp" },
+      // { name: "Hono", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132881/tech-stack/uwcz57v8ialn8a7uhfd5.webp" },
+    ]
+  }
+];
+
 export default function Page() {
 
     const [copied, setCopied] = useState(false);
@@ -461,11 +504,39 @@ export default function Page() {
       </div>
     </section>
 
+    <section className={styles.aboutSkill}>
+      <div className={styles.techStackContainer}>
+        {techStackData.map((section, index) => (
+          <div key={index} className={styles.techSection}>
+            <div className={styles.sectionTitleWrapper}>
+              <h2 className={styles.sectionTitle}>{section.category}</h2>
+            </div>
+            
+            <div className={styles.techGrid}>
+              {section.items.map((item, i) => (
+                <div key={i} className={`${styles.techItem} ${styles.slideUp}`}>
+                  <div className={styles.iconWrapper}>
+                    <img 
+                      src={item.url} 
+                      alt={item.name} 
+                      className={styles.techIcon}
+                      loading="lazy"
+                    />
+                  </div>
+                  <span className={styles.techName}>{item.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
     <section className={styles.footer}>
       <div className={styles.footerwrapper}>
         <p>You know how to find me</p>
         <a href="mailto:giotsnobiladze5@gmail.com" className={styles.footerEmail} onClick={handleCopy}>{copied ? "Copied!" : "giotsnobiladze5@gmail.com"}</a>
-        <a href="https://github.com/Georgetsn29" target="_blank" className={styles.footerGit}>build by GIORGI &lt;3</a>
+        <a href="https://github.com/Georgetsn29" target="_blank" className={styles.footerGit}>built by GIORGI &lt;3</a>
       </div>
     </section>
     </>

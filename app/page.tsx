@@ -509,7 +509,7 @@ export default function Page() {
         {techStackData.map((section, index) => (
           <div key={index} className={styles.techSection}>
             <div className={styles.sectionTitleWrapper}>
-              <h2 className={styles.sectionTitle}>{section.category}</h2>
+              <h2 className={styles.sectionTitleSkill}>{section.category}</h2>
             </div>
             
             <div className={styles.techGrid}>

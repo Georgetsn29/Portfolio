@@ -459,7 +459,7 @@
         }
 
         /* Typography */
-        .sectionTitle {
+        .sectionTitleSkill {
           font-size: 3rem; /* Equivalent to text-5xl */
           line-height: 1;
           text-transform: uppercase;

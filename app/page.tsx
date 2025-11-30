@@ -349,7 +349,7 @@ export default function Page() {
                     target="_blank"
                     rel="noreferrer"
                     className={`${styles.navLink} ${styles.capitalizeText}`}
-                    style={{ cursor: "none" }}
+                    // style={{ cursor: "none" }}
                   >
                     Github
                   </a>
@@ -360,7 +360,7 @@ export default function Page() {
                     target="_blank"
                     rel="noreferrer"
                     className={`${styles.navLink} ${styles.capitalizeText}`}
-                    style={{ cursor: "none" }}
+                    // style={{ cursor: "none" }}
                   >
                     Linkedin
                   </a>
@@ -371,7 +371,7 @@ export default function Page() {
                     target="_blank"
                     rel="noreferrer"
                     className={styles.navLink}
-                    style={{ cursor: "none" }}
+                    // style={{ cursor: "none" }}
                   >
                     RESUME
                   </a>
@@ -383,7 +383,9 @@ export default function Page() {
               <p className={styles.sectionTitle}>MENU</p>
               <ul className={styles.navList}>
                 <li>
-                  <a href="#home" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`} style={{ cursor: "none" }}>
+                  <a href="#home" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`}
+                  //  style={{ cursor: "none" }}
+                   >
                     <span className={`${styles.iconContainer} ${styles.iconHome}`}>
                       <SvgIcon />
                     </span>
@@ -391,7 +393,9 @@ export default function Page() {
                   </a>
                 </li>
                 <li>
-                  <a href="#about" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`} style={{ cursor: "none" }}>
+                  <a href="#about" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`}
+                  //  style={{ cursor: "none" }}
+                   >
                     <span className={`${styles.iconContainer} ${styles.iconAbout}`}>
                       <SvgIcon />
                     </span>
@@ -399,7 +403,9 @@ export default function Page() {
                   </a>
                 </li>
                 <li>
-                  <a href="#experience" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`} style={{ cursor: "none" }}>
+                  <a href="#experience" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`}
+                  //  style={{ cursor: "none" }}
+                   >
                     <span className={`${styles.iconContainer} ${styles.iconExp}`}>
                       <SvgIcon />
                     </span>
@@ -407,7 +413,9 @@ export default function Page() {
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`} style={{ cursor: "none" }}>
+                  <a href="#projects" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`} 
+                  // style={{ cursor: "none" }}
+                  >
                     <span className={`${styles.iconContainer} ${styles.iconProjects}`}>
                       <SvgIcon />
                     </span>
@@ -484,7 +492,7 @@ export default function Page() {
     </section>
 
 
-    <section id="about" className={styles.about} data-aos="fade-up" data-aos-delay="100">
+    <section id="about" className={styles.about} >
       <div className={styles.aboutContainer}>
         <p className={styles.aboutPMain} data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"> I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users. </p>
         <p className={styles.aboutPMe} data-aos="fade-up" data-aos-delay="250" data-aos-once="true">This is me.</p>
@@ -505,7 +513,7 @@ export default function Page() {
     </section>
 
     <section className={styles.aboutSkill}>
-      <div className={styles.techStackContainer}>
+      <div className={styles.techStackContainer} data-aos="fade-up" data-aos-delay="100">
         {techStackData.map((section, index) => (
           <div key={index} className={styles.techSection}>
             <div className={styles.sectionTitleWrapper}>

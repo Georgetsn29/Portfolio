@@ -264,7 +264,9 @@
   display: flex;
   /* gap: 150px; */
   padding-top: 200px;
-  margin-left: 200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
 }
 
 .left {
@@ -348,7 +350,6 @@
 
 
 
-
 /*! about !*/
 
 .about {
@@ -424,148 +425,359 @@
 
 
 
+/*! stack !*/
+.myStackContainer {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  align-items: center;
+}
+
+.myStackTitle {
+  font-size: 1.25rem; 
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.spinner {
+  /* This is the keyframe animation */
+  animation: spin 1s linear infinite; /* animate-spin and duration-7000 */
+}
+
+/* Keyframe definition for the rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
+/*! skills !*/
 .aboutSkill {
-  padding-block: 250px;
+  padding-top: 250px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .techStackContainer {
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          gap: 5rem; /* Equivalent to space-y-20 */
-        }
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* Equivalent to space-y-20 */
+}
 
-        /* Layout */
-        .techSection {
-          display: flex;
-          flex-direction: column;
-          gap: 2rem;
-        }
+/* Layout */
+.techSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-        @media (min-width: 768px) {
-          .techSection {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 2rem;
-          }
+@media (min-width: 768px) {
+  .techSection {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+  }
 
-          .sectionTitleWrapper {
-            grid-column: span 5;
-          }
+  .sectionTitleWrapper {
+    grid-column: span 5;
+  }
 
-          .techGrid {
-            grid-column: span 7;
-          }
-        }
+  .techGrid {
+    grid-column: span 7;
+  }
+}
 
-        /* Typography */
-        .sectionTitleSkill {
-          font-size: 3rem; /* Equivalent to text-5xl */
-          line-height: 1;
-          text-transform: uppercase;
-          font-weight: 500;
-          color: rgba(255, 255, 255, 0.8);
-        }
+/* Typography */
+.sectionTitleSkill {
+  font-size: 3rem; /* Equivalent to text-5xl */
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
 
-        /* Grid of Items */
-        .techGrid {
-          display: flex;
-          flex-wrap: wrap;
-          column-gap: 2.75rem; /* gap-x-11 */
-          row-gap: 2.25rem;    /* gap-y-9 */
-        }
+/* Grid of Items */
+.techGrid {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.75rem; /* gap-x-11 */
+  row-gap: 2.25rem;    /* gap-y-9 */
+}
 
-        /* Individual Tech Item */
-        .techItem {
-          display: flex;
-          align-items: center;
-          gap: 0.875rem; /* gap-3.5 */
-          line-height: 1;
-        }
+/* Individual Tech Item */
+.techItem {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem; /* gap-3.5 */
+  line-height: 1;
+}
 
-        .techName {
-          font-size: 1.5rem; /* text-2xl */
-          text-transform: capitalize;
-          font-weight: 400;
-        }
+.techName {
+  font-size: 1.5rem; /* text-2xl */
+  text-transform: capitalize;
+  font-weight: 400;
+}
 
-        /* Icons */
-        .iconWrapper {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+/* Icons */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-        .techIcon {
-          width: 40px;
-          height: 40px;
-          max-height: 2.5rem;
-          object-fit: contain;
-        }
+.techIcon {
+  width: 40px;
+  height: 40px;
+  max-height: 2.5rem;
+  object-fit: contain;
+}
 
-        /* Animation Keyframes */
-        @keyframes slideUpFade {
-          0% {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+/* Animation Keyframes */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-        /* Animation Class */
-        .slideUp {
-          animation: slideUpFade 0.6s ease-out forwards;
-          opacity: 0;
-        }
+/* Animation Class */
+.slideUp {
+  animation: slideUpFade 0.6s ease-out forwards;
+  opacity: 0;
+}
 
-        /* Stagger animations slightly for a nicer effect */
-        .techItem:nth-child(1) { animation-delay: 1s; }
-        .techItem:nth-child(2) { animation-delay: 0.15s; }
-        .techItem:nth-child(3) { animation-delay: 0.2s; }
-        .techItem:nth-child(4) { animation-delay: 0.25s; }
-        .techItem:nth-child(5) { animation-delay: 0.3s; }
-        .techItem:nth-child(6) { animation-delay: 0.35s; }
-        /* ... add more if needed */
-
+/* Stagger animations slightly for a nicer effect */
+.techItem:nth-child(1) { animation-delay: 1s; }
+.techItem:nth-child(2) { animation-delay: 0.15s; }
+.techItem:nth-child(3) { animation-delay: 0.2s; }
+.techItem:nth-child(4) { animation-delay: 0.25s; }
+.techItem:nth-child(5) { animation-delay: 0.3s; }
+.techItem:nth-child(6) { animation-delay: 0.35s; }
+/* ... add more if needed */
 
 
 
+/*! experience !*/
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding-block: 250px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 3.5rem;
+}
+
+.experienceItem {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  /* background-color: #1e293b; */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.textTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.textSubtitle {
+  font-size: 1.875rem;
+  line-height: 2.25rem; 
+  line-height: 1; 
+  margin-top: 0.875rem; 
+  margin-bottom: 0.625rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem; 
+  }
+}
+
+.textDate {
+  font-size: 1.125rem; 
+  line-height: 1.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 
 
 
 
+/*! Projects !*/
+.projects{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
+.containerProjects {
+  /* background-color: #111; */
+  padding: 2rem;
+}
 
+.projectCard {
+  display: block;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 4px solid transparent;
+}
 
+/* Hover effect: Fade out usually requires a parent list context, 
+    but here we handle the active hover state */
+.projectCard:hover {
+  opacity: 1 !important;
+}
 
+/* --- Content Layout --- */
+.cardContent {
+  display: flex;
+  gap: 0.5rem;
+}
 
+.projectNumber {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  /* margin-top: 0.5rem; */
+}
 
+.projectDetails {
+  flex: 1;
+}
 
+/* --- Title & Gradient Animation --- */
+.projectTitle {
+  margin: 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.87rem; 
+  line-height: 1.2;
+  background-image: linear-gradient(
+    to right, 
+    #d84e2c 50%, 
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0; /* Start from right (White) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  transition: background-position 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+/* Hover: Slide gradient to left (Primary Color) */
+.projectCard:hover .projectTitle {
+  background-position: 0 0;
+}
 
+/* --- SVG Icon & Draw Animation --- */
+.iconWrapperProjects {
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+}
 
+.projectCard:hover .iconWrapperProjects {
+  opacity: 1;
+}
 
+/* SVG Paths with Dash Array for "Draw" effect */
+.pathBox {
+  stroke-dasharray: 43.43;
+  stroke-dashoffset: 43.43;
+  transition: stroke-dashoffset 0.6s ease 0.1s; /* Slight delay */
+}
 
+.pathArrowLine {
+  stroke-dasharray: 15.56;
+  stroke-dashoffset: 16;
+  transition: stroke-dashoffset 0.4s ease 0.2s;
+}
 
+.pathArrowCurb {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 12;
+  transition: stroke-dashoffset 0.4s ease 0.3s;
+}
 
+/* Hover: Set offsets to 0 to "draw" lines */
+.projectCard:hover .pathBox,
+.projectCard:hover .pathArrowLine,
+.projectCard:hover .pathArrowCurb {
+  stroke-dashoffset: 0;
+}
 
+/* --- Tags --- */
+.tagsContainer {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
 
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
+.dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #4b5563;
+}
 
+/* --- Responsive Styles (md breakpoint ~768px) --- */
+@media (min-width: 768px) {
+  .projectCard {
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  /* "first:pt-0!" and "last:pb-0" logic 
+      (Assuming this component is used in a list) */
+  .projectCard:first-child {
+    padding-top: 0;
+  }
+  .projectcard:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 
+  .cardcontent {
+    gap: 1.25rem; /* md:gap-5 */
+  }
 
-
-
-
-
-
+  .projectTitle {
+    font-size: 1.87rem;
+  }
+}
 
 
 
@@ -577,6 +789,7 @@
   justify-content: center;
   display: flex;
   padding-bottom: 20px;
+  padding-top: 250px;
 }
 
 .footerwrapper {
@@ -802,6 +1015,14 @@
 .footerGit {
   color: #ffffffc1;
   font-size: 14px;
+}
+
+.gridContainer {
+  width: 100%;
+}
+
+.containerProjects {
+  width: 100%;
 }
 
 }

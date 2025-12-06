@@ -321,6 +321,12 @@ export default function Page() {
   //   { name: 'Linkedin',  href: 'https://linkedin.com/in/my-profile' },
   //   { name: 'RESUME',  href: './Giorgi_Tsnobiladze_CV.pdf' },
   // ];
+
+
+  const dynamicItemStyle = {
+    opacity: 0.7969,
+    transform: 'translate3d(0px, 10.1567px, 0px)',
+  };
   
 
   return (
@@ -513,6 +519,34 @@ export default function Page() {
     </section>
 
     <section className={styles.aboutSkill}>
+      <div className={styles.myStackContainer}>
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        xmlnsXlink="http://www.w3.org/1999/xlink" 
+        fill="none" 
+        viewBox="0 0 25 29" 
+        width="25" 
+        className={styles.spinner}
+      >
+        <path fill="url(#section-flower_svg__a)" d="M25 0H0v28.929h25z"></path>
+        <defs>
+          <pattern 
+            id="section-flower_svg__a" 
+            width="1" 
+            height="1" 
+            patternContentUnits="objectBoundingBox"
+          >
+            <use 
+              xlinkHref="#section-flower_svg__b" 
+              transform="matrix(.00255 0 0 .0022 -.01 0)"
+            ></use>
+          </pattern>
+          {/* Note: The original image href 'a' is a placeholder and should be updated */}
+          <image xlinkHref="img/flower.png" id="section-flower_svg__b" width="400" height="453"></image>
+        </defs>
+      </svg>
+        <h2 className={styles.myStackTitle}>MY STACK</h2>
+      </div>
       <div className={styles.techStackContainer} data-aos="fade-up" data-aos-delay="100">
         {techStackData.map((section, index) => (
           <div key={index} className={styles.techSection}>
@@ -520,7 +554,7 @@ export default function Page() {
               <h2 className={styles.sectionTitleSkill}>{section.category}</h2>
             </div>
             
-            <div className={styles.techGrid}>
+            <div className={styles.techGrid} data-aos="fade-up" data-aos-delay="200">
               {section.items.map((item, i) => (
                 <div key={i} className={`${styles.techItem} ${styles.slideUp}`}>
                   <div className={styles.iconWrapper}>
@@ -538,6 +572,202 @@ export default function Page() {
           </div>
         ))}
       </div>
+    </section>
+
+    <section id="experience" className={styles.experience}>
+      <div className={styles.myStackContainer} style={{paddingLeft: "1.5rem"}}>
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        xmlnsXlink="http://www.w3.org/1999/xlink" 
+        fill="none" 
+        viewBox="0 0 25 29" 
+        width="25" 
+        className={styles.spinner}
+      >
+        <path fill="url(#section-flower_svg__a)" d="M25 0H0v28.929h25z"></path>
+        <defs>
+          <pattern 
+            id="section-flower_svg__a" 
+            width="1" 
+            height="1" 
+            patternContentUnits="objectBoundingBox"
+          >
+            <use 
+              xlinkHref="#section-flower_svg__b" 
+              transform="matrix(.00255 0 0 .0022 -.01 0)"
+            ></use>
+          </pattern>
+          {/* Note: The original image href 'a' is a placeholder and should be updated */}
+          <image xlinkHref="img/flower.png" id="section-flower_svg__b" width="400" height="453"></image>
+        </defs>
+      </svg>
+        <h2 className={styles.myStackTitle}>MY EXPERIENCE</h2>
+      </div>
+      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="200">
+        <div className={styles.experienceItem} style={dynamicItemStyle}>
+          <p className={styles.textTitle}>Soft Master Trade</p>
+          <p className={styles.textSubtitle}>IT Specialist</p>
+          <p className={styles.textDate}>05/2025 - 08/2025</p>
+        </div>
+      </div>
+      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
+        <div className={styles.experienceItem} style={dynamicItemStyle}>
+          <p className={styles.textTitle}>All-Safe</p>
+          <p className={styles.textSubtitle}>Front-End Developer - Internship</p>
+          <p className={styles.textDate}>04/2025 - 07/2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" className={styles.projects}>
+      <div className={styles.myStackContainer} style={{paddingLeft: "1.5rem"}}>
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        xmlnsXlink="http://www.w3.org/1999/xlink" 
+        fill="none" 
+        viewBox="0 0 25 29" 
+        width="25" 
+        className={styles.spinner}
+      >
+        <path fill="url(#section-flower_svg__a)" d="M25 0H0v28.929h25z"></path>
+        <defs>
+          <pattern 
+            id="section-flower_svg__a" 
+            width="1" 
+            height="1" 
+            patternContentUnits="objectBoundingBox"
+          >
+            <use 
+              xlinkHref="#section-flower_svg__b" 
+              transform="matrix(.00255 0 0 .0022 -.01 0)"
+            ></use>
+          </pattern>
+          {/* Note: The original image href 'a' is a placeholder and should be updated */}
+          <image xlinkHref="img/flower.png" id="section-flower_svg__b" width="400" height="453"></image>
+        </defs>
+      </svg>
+        <h2 className={styles.myStackTitle}>SELECTED PROJECTS</h2>
+      </div>
+      <div className={styles.containerProjects} data-aos="fade-up" data-aos-delay="200">
+        <a href="https://sfbsolutions.ge/" target="#" className={styles.projectCard}>
+        <div className={styles.cardContent}>
+          
+          {/* Number */}
+          <div className={styles.projectNumber}>_01.</div>
+
+          <div className={styles.projectDetails}>
+            {/* Title with Gradient Hover Effect */}
+            <p className={styles.projectTitle}>
+              Sfbsolutions
+              
+              {/* Animated SVG Icon */}
+              <span className={styles.iconWrapperProjects}>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="36" 
+                  height="36" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <path 
+                    className={styles.pathBox} 
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" 
+                  />
+                  <path 
+                    className={styles.pathArrowLine} 
+                    d="M10 14 21 3" 
+                  />
+                  <path 
+                    className={styles.pathArrowCurb} 
+                    d="M15 3h6v6" 
+                  />
+                </svg>
+              </span>
+            </p>
+
+            {/* Tags */}
+            <div className={styles.tagsContainer}>
+              <div className={styles.tag}>
+                <span>Next</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>TypeScript</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <div className={styles.containerProjects} data-aos="fade-up" data-aos-delay="300">
+        <a href="https://georgetsn29.github.io/web-login-reg/" target="#" className={styles.projectCard}>
+        <div className={styles.cardContent}>
+          
+          {/* Number */}
+          <div className={styles.projectNumber}>_02.</div>
+
+          <div className={styles.projectDetails}>
+            {/* Title with Gradient Hover Effect */}
+            <p className={styles.projectTitle}>
+              Login/Reg
+              
+              {/* Animated SVG Icon */}
+              <span className={styles.iconWrapperProjects}>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="36" 
+                  height="36" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <path 
+                    className={styles.pathBox} 
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" 
+                  />
+                  <path 
+                    className={styles.pathArrowLine} 
+                    d="M10 14 21 3" 
+                  />
+                  <path 
+                    className={styles.pathArrowCurb} 
+                    d="M15 3h6v6" 
+                  />
+                </svg>
+              </span>
+            </p>
+
+            {/* Tags */}
+            <div className={styles.tagsContainer}>
+              <div className={styles.tag}>
+                <span>Next</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>TypeScript</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+      
     </section>
 
     <section className={styles.footer}>

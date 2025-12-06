@@ -442,11 +442,9 @@
 }
 
 .spinner {
-  /* This is the keyframe animation */
-  animation: spin 1s linear infinite; /* animate-spin and duration-7000 */
+  animation: spin 1s linear infinite;
 }
 
-/* Keyframe definition for the rotation */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -469,10 +467,9 @@
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 5rem; /* Equivalent to space-y-20 */
+  gap: 5rem;
 }
 
-/* Layout */
 .techSection {
   display: flex;
   flex-direction: column;
@@ -495,9 +492,8 @@
   }
 }
 
-/* Typography */
 .sectionTitleSkill {
-  font-size: 3rem; /* Equivalent to text-5xl */
+  font-size: 3rem;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 500;

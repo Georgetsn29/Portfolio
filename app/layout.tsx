@@ -20,9 +20,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="img/odot.png" />
       </head>
       <body>
-
-        {/* <Sidebar /> */}
-
         <main>{children}</main>
       </body>
 

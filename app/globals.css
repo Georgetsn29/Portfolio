@@ -7,7 +7,6 @@
 }
 
 html {
-  /* This property is applied to the root element (html) */
   scroll-behavior: smooth;
 }
 
@@ -23,7 +22,6 @@ body {
   src: url('/fonts/Josefin Sans');
 }
 
-/* --- Custom Scrollbar (Optional but recommended) --- */
 body::-webkit-scrollbar {
     display: none;
 }
@@ -33,7 +31,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-/* --- Progress Indicator Track Styles --- */
 .progress-track {
     position: fixed;
     top: 50%;
@@ -57,13 +54,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-
 .app-container {
         min-height: 100vh;
         background-color: #000000;
@@ -74,7 +64,6 @@ body::-webkit-scrollbar-thumb {
     .opacity-100 { opacity: 1; }
     .pointer-events-none { pointer-events: none; }
 
-    /* Splash Screen Styles */
     .splash-screen {
         position: fixed;
         top: 0;
@@ -89,7 +78,6 @@ body::-webkit-scrollbar-thumb {
         transition: opacity 0.7s ease-in-out;
     }
 
-    /* Text Container Styles */
     .george-text-container {
         font-family: 'josefin sans';
         display: flex;
@@ -100,15 +88,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 5rem;
     }
     
-    /* Responsive Text Sizing */
-    @media (max-width: 640px) { .george-text-container { font-size: 90px; } } /* sm */
-    @media (min-width: 768px) { .george-text-container { font-size: 170px; } } /* md */
-    @media (min-width: 1024px) { .george-text-container { font-size: 190px; } } /* lg */
+    @media (max-width: 640px) { .george-text-container { font-size: 90px; } } 
+    @media (min-width: 768px) { .george-text-container { font-size: 170px; } }
+    @media (min-width: 1024px) { .george-text-container { font-size: 190px; } }
 
-    /* Letter Styles */
     .letter {
         display: inline-block;
-        /* Custom cubic-bezier for a smooth, punchy animation (ease-out) */
         transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
         overflow: hidden;
     }

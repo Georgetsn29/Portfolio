@@ -176,7 +176,9 @@ export default function Page() {
     }, []);
 
     useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ 
+      duration: 1000,
+     });
     if (typeof window !== "undefined") {
       window.onbeforeunload = function () {
         window.scrollTo(0, 0);
@@ -500,21 +502,21 @@ export default function Page() {
 
     <section id="about" className={styles.about} >
       <div className={styles.aboutContainer}>
-        <p className={styles.aboutPMain} data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"> I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users. </p>
+        <p className={styles.aboutPMain} data-aos="fade-up"> I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users. </p>
         <p className={styles.aboutPMe} data-aos="fade-up" data-aos-delay="250" data-aos-once="true">This is me.</p>
       <div className={styles.aboutContainerMain}>
         <div className={styles.aboutContainerLeft}>
           <div className={styles.aboutContainerLeftIn}>
-            <p className={styles.aboutPGiorgi} data-aos="fade-up" data-aos-delay="300">I&apos;m Giorgi</p>
-            <p className={styles.aboutPWeb} data-aos="fade-up" data-aos-delay="350">Web developer with a relentless drive for excellence, skilled in creating and maintaining functional and responsive web applications and websites.</p>
+            <p className={styles.aboutPGiorgi} data-aos="fade-up">I&apos;m Giorgi</p>
+            <p className={styles.aboutPWeb} data-aos="fade-up">Web developer with a relentless drive for excellence, skilled in creating and maintaining functional and responsive web applications and websites.</p>
           </div>
           </div>
           <div className={styles.aboutContainerRight}>
-            <p className={styles.aboutPYear} data-aos="fade-up" data-aos-delay="400">A {currentAge} year old Frontend web developer based in Tbilisi, Georgia. Dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.</p>
-            <p className={styles.aboutPAproach} data-aos="fade-up" data-aos-delay="450">My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.</p>
+            <p className={styles.aboutPYear} data-aos="fade-up">A {currentAge} year old Frontend web developer based in Tbilisi, Georgia. Dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.</p>
+            <p className={styles.aboutPAproach} data-aos="fade-up">My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.</p>
           </div>
       </div>
-      <p className={styles.aboutPStop} data-aos="fade-up" data-aos-delay="450">I CAN&apos;T STOP CONFIGURING MY CODE EDITOR</p>
+      <p className={styles.aboutPStop} data-aos="fade-up">I CAN&apos;T STOP CONFIGURING MY CODE EDITOR</p>
       </div>
     </section>
 
@@ -547,17 +549,17 @@ export default function Page() {
       </svg>
         <h2 className={styles.myStackTitle}>MY STACK</h2>
       </div>
-      <div className={styles.techStackContainer} data-aos="fade-up" data-aos-delay="100">
+      <div className={styles.techStackContainer} data-aos="fade-up">
         {techStackData.map((section, index) => (
           <div key={index} className={styles.techSection}>
             <div className={styles.sectionTitleWrapper}>
               <h2 className={styles.sectionTitleSkill}>{section.category}</h2>
             </div>
             
-            <div className={styles.techGrid} data-aos="fade-up" data-aos-delay="200">
+            <div className={styles.techGrid} data-aos="fade-up">
               {section.items.map((item, i) => (
                 <div key={i} className={`${styles.techItem} ${styles.slideUp}`}>
-                  <div className={styles.iconWrapper}>
+                  <div className={styles.iconWrapper} data-aos="fade-up">
                     <img 
                       src={item.url} 
                       alt={item.name} 
@@ -603,7 +605,7 @@ export default function Page() {
       </svg>
         <h2 className={styles.myStackTitle}>MY EXPERIENCE</h2>
       </div>
-      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="200">
+      <div className={styles.gridContainer} data-aos="fade-up">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <p className={styles.textTitle}>Soft Master Trade</p>
           <p className={styles.textSubtitle}>IT Specialist</p>
@@ -648,7 +650,7 @@ export default function Page() {
       </svg>
         <h2 className={styles.myStackTitle}>SELECTED PROJECTS</h2>
       </div>
-      <div className={styles.containerProjects} data-aos="fade-up" data-aos-delay="200">
+      <div className={styles.containerProjects} data-aos="fade-up">
         <a href="https://sfbsolutions.ge/" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           
@@ -708,7 +710,7 @@ export default function Page() {
       </a>
       </div>
 
-      <div className={styles.containerProjects} data-aos="fade-up" data-aos-delay="300">
+      <div className={styles.containerProjects} data-aos="fade-up">
         <a href="https://georgetsn29.github.io/web-login-reg/" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           

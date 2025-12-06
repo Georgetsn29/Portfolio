@@ -610,13 +610,13 @@ export default function Page() {
           <p className={styles.textDate}>05/2025 - 08/2025</p>
         </div>
       </div>
-      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
+      {/* <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <p className={styles.textTitle}>All-Safe</p>
           <p className={styles.textSubtitle}>Front-End Developer - Internship</p>
           <p className={styles.textDate}>04/2025 - 07/2025</p>
         </div>
-      </div>
+      </div> */}
     </section>
 
     <section id="projects" className={styles.projects}>

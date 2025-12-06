@@ -710,19 +710,16 @@ export default function Page() {
       </a>
       </div>
 
-      <div className={styles.containerProjects} data-aos="fade-up">
+      {/* <div className={styles.containerProjects} data-aos="fade-up">
         <a href="https://georgetsn29.github.io/web-login-reg/" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           
-          {/* Number */}
           <div className={styles.projectNumber}>_02.</div>
 
           <div className={styles.projectDetails}>
-            {/* Title with Gradient Hover Effect */}
             <p className={styles.projectTitle}>
               Login/Reg
               
-              {/* Animated SVG Icon */}
               <span className={styles.iconWrapperProjects}>
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -751,7 +748,6 @@ export default function Page() {
               </span>
             </p>
 
-            {/* Tags */}
             <div className={styles.tagsContainer}>
               <div className={styles.tag}>
                 <span>Next</span>
@@ -768,7 +764,7 @@ export default function Page() {
           </div>
         </div>
       </a>
-      </div>
+      </div> */}
       
     </section>
 

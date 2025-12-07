@@ -20,6 +20,38 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="img/odot.png" />
       </head>
       <body>
+        <div id="particle-container">
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+	<div className="particle"></div>
+</div>
         <main>{children}</main>
       </body>
 

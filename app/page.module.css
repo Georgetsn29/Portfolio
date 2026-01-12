@@ -206,6 +206,16 @@
   transition: all 0.5s ease;
 }
 
+.menuButton:hover .barTopOpen {
+  rotate: calc(-20deg);
+  transition: all 0.5s ease;
+}
+
+.menuButton:hover .barBottomOpen {
+  rotate: calc(20deg);
+  transition: all 0.5s ease;
+}
+
 .menuButton:focus {
   outline: none;
 }

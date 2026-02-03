@@ -609,7 +609,7 @@ export default function Page() {
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <p className={styles.textTitle}>Soft Master Trade</p>
           <p className={styles.textSubtitle}>IT Specialist</p>
-          <p className={styles.textDate}>05/2025 - 08/2025</p>
+          <p className={styles.textDate}>05&#47;2025 &#8209; 08&#47;2025</p>
         </div>
       </div>
       {/* <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">

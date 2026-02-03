@@ -101,15 +101,18 @@ const techStackData = [
       { name: "TypeScript", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132203/tech-stack/jiijjitzpqqlprtajrhk.webp" },
       { name: "React", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132226/tech-stack/g5935sduhdm81jtm4jom.webp" },
       { name: "Next.Js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133323/tech-stack/do3gzkhaca5bdyoc29u0.webp" },
-      // { name: "Tailwind CSS", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132308/tech-stack/jad7xbpdj86iun2ltk2z.webp" },
+      { name: "Tailwind CSS", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132308/tech-stack/jad7xbpdj86iun2ltk2z.webp" },
     ]
   },
-  // {
-  //   category: "Backend",
-  //   items: [
-  //     { name: "Supabase", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132759/tech-stack/vqocrcbbkvljocxjosxd.webp" },
-  //   ]
-  // },
+  {
+    category: "Backend",
+    items: [
+       { name: "Node.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132513/tech-stack/zynfozlvk9xzpfgpio7l.webp" },
+      { name: "Express.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132715/tech-stack/cawxocttm1iih5znufe2.webp" },
+      { name: "MongoDB", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132785/tech-stack/reepwudqzpvwkgw6k9bq.webp" },
+      { name: "Supabase", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132759/tech-stack/vqocrcbbkvljocxjosxd.webp" },
+    ]
+  },
   {
     category: "Tools",
     items: [
@@ -118,18 +121,15 @@ const techStackData = [
       { name: "Postman", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132971/tech-stack/hsxezphnnbqbgrt3iaa4.webp" },
       { name: "VSCODE", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133012/tech-stack/z22vae593l42i5b0owut.webp" },
       { name: "NPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133030/tech-stack/frmotw4echmb7rodvhzq.webp" },
-      // { name: "PNPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133049/tech-stack/kbbiqhq3mcujtlrobiiu.webp" },
-      // { name: "Yarn", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133111/tech-stack/lsuwj4a4wjjy9b80zhlh.webp" },
+      { name: "PNPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133049/tech-stack/kbbiqhq3mcujtlrobiiu.webp" },
+      { name: "Yarn", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133111/tech-stack/lsuwj4a4wjjy9b80zhlh.webp" },
       // { name: "Bun", url: "https://res.cloudinary.com/damompp1b/image/upload/v1762380323/tech-stack/itdtbhlknbmh8ezmv6kk.webp" },
     ]
   },
   {
     category: "Studying",
     items: [
-      { name: "Node.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132513/tech-stack/zynfozlvk9xzpfgpio7l.webp" },
-      { name: "Express.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132715/tech-stack/cawxocttm1iih5znufe2.webp" },
-      // { name: "MongoDB", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132785/tech-stack/reepwudqzpvwkgw6k9bq.webp" },
-      // { name: "Hono", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132881/tech-stack/uwcz57v8ialn8a7uhfd5.webp" },
+      { name: "Hono", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132881/tech-stack/uwcz57v8ialn8a7uhfd5.webp" },
     ]
   }
 ];
@@ -474,9 +474,9 @@ export default function Page() {
     <section id="home" className={styles.home}>
       <div className={styles.left}>
         <div>
-          <h1><span className={styles.frontend}>FRONTEND</span><br /><span className={styles.developer}>DEVELOPER</span></h1>
+          <h1><span className={styles.frontend}>FULL STACK</span><br /><span className={styles.developer}>DEVELOPER</span></h1>
         </div>
-        <div className={styles.devText}>Hi! I&apos;m <strong>Giorgi</strong>. A Frontend Developer with hands-on <br /> experience through building high-performance, scalable, <br /> and responsive web solutions.</div>
+        <div className={styles.devText}>Hi! I&apos;m <strong>Giorgi</strong>. A junior Full Stack Developer with hands-on <br /> experience through building high-performance, scalable, <br /> and responsive web solutions.</div>
         <div>
           <a className={styles.resume} href="./Giorgi_Tsnobiladze_CV.pdf" target="_blank">RESUME</a>
         </div>
@@ -512,7 +512,7 @@ export default function Page() {
           </div>
           </div>
           <div className={styles.aboutContainerRight}>
-            <p className={styles.aboutPYear} data-aos="fade-up">A {currentAge} year old Frontend web developer based in Tbilisi, Georgia. Dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.</p>
+            <p className={styles.aboutPYear} data-aos="fade-up">A {currentAge} year old junior Full Stack Web Developer based in Tbilisi, Georgia. Dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.</p>
             <p className={styles.aboutPAproach} data-aos="fade-up">My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.</p>
           </div>
       </div>

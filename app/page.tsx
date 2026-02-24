@@ -609,16 +609,19 @@ export default function Page() {
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <p className={styles.textTitle}>Soft Master Trade</p>
           <p className={styles.textSubtitle}>IT Specialist</p>
-          <p className={styles.textDate}>05&#47;2025 &#8209; 08&#47;2025</p>
+          {/* <p className={styles.textDate}>05&#47;2025 &#8209; 08&#47;2025</p> */}
+          <span className={styles.appleLink}>
+            05/2025 - 08/2025
+          </span>
         </div>
       </div>
-      {/* <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
+      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
-          <p className={styles.textTitle}>All-Safe</p>
-          <p className={styles.textSubtitle}>Front-End Developer - Internship</p>
-          <p className={styles.textDate}>04/2025 - 07/2025</p>
+          <p className={styles.textTitle}>UpWork</p>
+          <p className={styles.textSubtitle}>Full Stack Developer</p>
+          <p className={styles.textDate}>01/2026 - On Going</p>
         </div>
-      </div> */}
+      </div>
     </section>
 
     <section id="projects" className={styles.projects}>
@@ -711,14 +714,74 @@ export default function Page() {
       </div>
 
       {/* <div className={styles.containerProjects} data-aos="fade-up">
-        <a href="https://georgetsn29.github.io/web-login-reg/" target="#" className={styles.projectCard}>
+        <a href="" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           
           <div className={styles.projectNumber}>_02.</div>
 
           <div className={styles.projectDetails}>
             <p className={styles.projectTitle}>
-              Login/Reg
+              Concrete Static
+              
+              <span className={styles.iconWrapperProjects}>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="36" 
+                  height="36" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <path 
+                    className={styles.pathBox} 
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" 
+                  />
+                  <path 
+                    className={styles.pathArrowLine} 
+                    d="M10 14 21 3" 
+                  />
+                  <path 
+                    className={styles.pathArrowCurb} 
+                    d="M15 3h6v6" 
+                  />
+                </svg>
+              </span>
+            </p>
+
+            <div className={styles.tagsContainer}>
+              <div className={styles.tag}>
+                <span>React</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>TypeScript</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>TailwindCSS</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>Node JS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <div className={styles.containerProjects} data-aos="fade-up">
+        <a href="" target="#" className={styles.projectCard}>
+        <div className={styles.cardContent}>
+          
+          <div className={styles.projectNumber}>_03.</div>
+
+          <div className={styles.projectDetails}>
+            <p className={styles.projectTitle}>
+              MZE
               
               <span className={styles.iconWrapperProjects}>
                 <svg 
@@ -759,6 +822,10 @@ export default function Page() {
               </div>
               <div className={styles.tag}>
                 <span>CSS</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>Node JS</span>
               </div>
             </div>
           </div>

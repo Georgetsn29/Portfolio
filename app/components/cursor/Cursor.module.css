@@ -5,14 +5,18 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: white; /* Base color for inversion */
+  background-color: white;
   border-radius: 50%;
   position: fixed;
   top: -4px; 
   left: -4px;
   pointer-events: none;
   z-index: 10000;
-  
-  /* This is the key line for the transparency/inversion effect */
   mix-blend-mode: difference; 
+}
+
+@media (max-width: 480px) {
+  .dot {
+  display: none;
+}
 }

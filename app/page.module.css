@@ -908,7 +908,7 @@
 
 /*! Home !*/
 
-  .home {
+.home {
   gap: 10px;
   flex-direction: column;
   margin-left: 10px;
@@ -919,7 +919,7 @@
 }
 
 .left {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .left h1 {
@@ -944,7 +944,8 @@
 
 .right {
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 0px;
+  margin-bottom: 100px;
   padding-bottom: 0px;
 }
 

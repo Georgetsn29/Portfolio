@@ -194,6 +194,7 @@
   background-color: transparent;
   padding: 0.25rem; /* p-1 */
   border: none;
+  cursor: none;
 }
 
 .menuButton:hover .barTopClosed {
@@ -207,12 +208,12 @@
 }
 
 .menuButton:hover .barTopOpen {
-  rotate: calc(-20deg);
+  rotate: calc(-10deg);
   transition: all 0.5s ease;
 }
 
 .menuButton:hover .barBottomOpen {
-  rotate: calc(20deg);
+  rotate: calc(10deg);
   transition: all 0.5s ease;
 }
 
@@ -260,11 +261,19 @@
   letter-spacing: 0.5px;
 }
 
+.sideEmail:hover {
+  text-decoration: underline;
+}
+
 .sideBarEmail {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
   letter-spacing: 0.5px;
+}
+
+.sideBarEmail:hover {
+  text-decoration: underline;
 }
 
 /*! Home !*/
@@ -331,6 +340,7 @@
 
 .resume:hover {
   background-position: bottom;
+  cursor: none;
 }
 
 
@@ -941,7 +951,6 @@
 .innerSpan {
   padding-left: 12px;
   letter-spacing: 1px;
-  font-size: 12px;
   line-height: 30px;
 }
 

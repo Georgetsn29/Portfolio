@@ -1,6 +1,7 @@
 import './globals.css';
 import type { ReactNode } from 'react';
 import { Josefin_Sans } from 'next/font/google'
+import CustomCursor from './components/cursor/CustomCursor';
 
 export const metadata = {
   title: 'Portfolio',
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="img/odot.png" />
       </head>
       <body>
+		<CustomCursor />
         <div id="particle-container">
 	<div className="particle"></div>
 	<div className="particle"></div>

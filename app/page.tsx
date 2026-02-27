@@ -484,7 +484,7 @@ export default function Page() {
 
       <div className={styles.right}>
           <span className={styles.spanColor}>&lt;span&gt;</span>
-            <div className={styles.innerSpan}>
+            <div className={styles.innerSpan} style={{ fontSize: '14px' }}>
               <div>
                 <span>Proficient in the latest web technologies and</span>
               </div>

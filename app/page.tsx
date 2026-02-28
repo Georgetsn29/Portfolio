@@ -455,7 +455,7 @@ export default function Page() {
             id="scroll-progress-bar" 
             style={{ 
                 width: '100%',
-                backgroundColor: '#d84e2c',
+                backgroundColor: '#30c495',
                 borderRadius: '9999px',
                 height: '100%',
                 transition: 'transform 500ms ease-out ',

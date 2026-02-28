@@ -12,7 +12,7 @@
   right: 0;
   z-index: 30;
   width: 500px; /* w-64 */
-  background-color: #d84e2c; /* bg-indigo-800 */
+  background-color: #22b184f2; /* bg-indigo-800 */
   color: white;
   transform: translateX(100%); /* Start off-screen */
   transition: transform 300ms ease-in-out;
@@ -130,19 +130,19 @@
 }
 
 .iconHome {
-  background-color: #eab308;
+  background-color: #E0F2F1;
   color: #000000;
 }
 .iconAbout {
-  background-color: #3b82f6;
+  background-color: #80CBC4;
   color: #ffffff;
 }
 .iconExp {
-  background-color: #14b8a6;
+  background-color: #26A69A;
   color: #000000;
 }
 .iconProjects {
-  background-color: #6366f1;
+  background-color: #00695C;
   color: #ffffff;
 }
 
@@ -303,7 +303,7 @@
 }
 
 .frontend {
-  color: #d84e2c;
+  color: #30c495;
 }
 
 .developer {
@@ -332,7 +332,7 @@
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
-  background: linear-gradient(to top, #ffffff 50%, #d84e2c 50%);
+  background: linear-gradient(to top, #ffffff 50%, #30c495e9 50%);
   background-size: 100% 200%;
   background-position: top;
   transition: background-position 0.4s ease;
@@ -361,7 +361,7 @@
 }
 
 .spanColor {
-  color: #d84e2c;
+  color: #30c495;
   letter-spacing: 2px;
   font-size: 18px;
 }
@@ -438,7 +438,7 @@
 
 .aboutPStop {
   font-size: 36px;
-  color: #d84e2c;
+  color: #30c495;
   margin-top: 40px;
   margin: 40px auto;
 } 
@@ -533,8 +533,14 @@
   transform: rotate(-3deg);
   width: 100%;
   height: 0.4rem;
-  background-color: #ff330053;
+  background-color: #00ffae45;
   z-index: -1;
+  transition: ease-in-out 0.5s;
+}
+
+.sectionTitleSkill:hover::after {
+  transform: rotate(6deg);
+  transition: ease-in-out 0.5s;
 }
 
 /* Grid of Items */
@@ -709,7 +715,7 @@
   line-height: 1.2;
   background-image: linear-gradient(
     to right, 
-    #d84e2c 50%, 
+    #30c495 50%, 
     #ffffff 50%
   );
   background-size: 200% 100%;

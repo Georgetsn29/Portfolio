@@ -518,6 +518,23 @@
   text-transform: uppercase;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.sectionTitleSkill::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-3deg);
+  width: 100%;
+  height: 0.4rem;
+  background-color: #ff330053;
+  z-index: -1;
 }
 
 /* Grid of Items */

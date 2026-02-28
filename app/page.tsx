@@ -554,7 +554,7 @@ export default function Page() {
         {techStackData.map((section, index) => (
           <div key={index} className={styles.techSection}>
             <div className={styles.sectionTitleWrapper}>
-              <h2 className={styles.sectionTitleSkill}>{section.category}</h2>
+              <h2 className={styles.sectionTitleSkill}><span style={{color: '#d84e2c', fontSize: '4rem'}}></span>{section.category}<span style={{color: '#d84e2c', fontSize: '4rem'}}></span></h2>
             </div>
             
             <div className={styles.techGrid} data-aos="fade-up">

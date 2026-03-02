@@ -714,8 +714,8 @@ export default function Page() {
       </a>
       </div>
 
-      {/* <div className={styles.containerProjects} data-aos="fade-up">
-        <a href="" target="#" className={styles.projectCard}>
+      <div className={styles.containerProjects} data-aos="fade-up">
+        <a href="https://concrete-static.onrender.com/" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           
           <div className={styles.projectNumber}>_02.</div>
@@ -774,7 +774,7 @@ export default function Page() {
       </a>
       </div>
 
-      <div className={styles.containerProjects} data-aos="fade-up">
+      {/* <div className={styles.containerProjects} data-aos="fade-up">
         <a href="" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           

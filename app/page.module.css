@@ -616,7 +616,8 @@
 .experience {
   display: flex;
   flex-direction: column;
-  padding-block: 250px;
+  padding-top: 100px;
+  padding-bottom: 250px;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -624,8 +625,7 @@
 .education {
   display: flex;
   flex-direction: column;
-  padding-top: 250px;
-  padding-bottom: 100px;
+  padding-block: 250px 200px;
   margin: 0 auto;
   max-width: 1200px;
 }

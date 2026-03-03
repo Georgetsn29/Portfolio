@@ -411,6 +411,16 @@ export default function Page() {
                   </a>
                 </li>
                 <li>
+                  <a href="#education" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`}
+                  //  style={{ cursor: "none" }}
+                   >
+                    <span className={`${styles.iconContainer} ${styles.iconEdu}`}>
+                      <SvgIcon />
+                    </span>
+                    Education
+                  </a>
+                </li>
+                <li>
                   <a href="#experience" onClick={closeSidebar} className={`${styles.group} ${styles.navButton}`}
                   //  style={{ cursor: "none" }}
                    >
@@ -574,6 +584,44 @@ export default function Page() {
             </div>
           </div>
         ))}
+      </div>
+    </section>
+
+    <section id="education" className={styles.education}>
+      <div className={styles.myStackContainer} style={{paddingLeft: "1.5rem"}}>
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        xmlnsXlink="http://www.w3.org/1999/xlink" 
+        fill="none" 
+        viewBox="0 0 25 29" 
+        width="25" 
+        className={styles.spinner}
+      >
+        <path fill="url(#section-flower_svg__a)" d="M25 0H0v28.929h25z"></path>
+        <defs>
+          <pattern 
+            id="section-flower_svg__a" 
+            width="1" 
+            height="1" 
+            patternContentUnits="objectBoundingBox"
+          >
+            <use 
+              xlinkHref="#section-flower_svg__b" 
+              transform="matrix(.00255 0 0 .0022 -.01 0)"
+            ></use>
+          </pattern>
+          {/* Note: The original image href 'a' is a placeholder and should be updated */}
+          <image xlinkHref="img/flower.png" id="section-flower_svg__b" width="400" height="453"></image>
+        </defs>
+      </svg>
+        <h2 className={styles.myStackTitle}>MY EDUCATION</h2>
+      </div>
+      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
+        <div className={styles.experienceItem} style={dynamicItemStyle}>
+          <p className={styles.textTitle}>International Black Sea University</p>
+          <p className={styles.textSubtitle}>Computer Science</p>
+          <p className={styles.textDate}>08/2021 - On Going</p>
+        </div>
       </div>
     </section>
 

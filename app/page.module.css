@@ -537,7 +537,7 @@
   transform: rotate(-3deg);
   width: 100%;
   height: 0.4rem;
-  background-color: #00ffae45;
+  background-color: #005D52;
   z-index: -1;
   transition: ease-in-out 0.5s;
 }
@@ -648,6 +648,52 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+.textTitleA {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  /* color: rgba(255, 255, 255, 0.8); */
+  background-image: linear-gradient(
+    to right, 
+    #30c495 50%, 
+    rgba(255, 255, 255, 0.8) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textTitleA:hover {
+  background-position: 0 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.projectTitle {
+  margin: 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.87rem; 
+  line-height: 1.2;
+  background-image: linear-gradient(
+    to right, 
+    #30c495 50%, 
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0; /* Start from right (White) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .textSubtitle {
   font-size: 1.875rem;
   line-height: 2.25rem; 
@@ -737,7 +783,7 @@
   background-clip: text;
   color: transparent;
   
-  transition: background-position 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hover: Slide gradient to left (Primary Color) */

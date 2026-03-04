@@ -618,7 +618,7 @@ export default function Page() {
       </div>
       <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
-          <p className={styles.textTitle}>International Black Sea University</p>
+          <a  href="https://ibsu.edu.ge/en/" target="_blank" rel="noreferrer" className={styles.textTitleA}>International Black Sea University</a>
           <p className={styles.textSubtitle}>Computer Science</p>
           <p className={styles.textDate}>08/2021 - On Going</p>
         </div>

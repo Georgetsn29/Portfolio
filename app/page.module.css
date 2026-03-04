@@ -394,12 +394,41 @@
   font-size: 60px;
   width: 100%;
   padding-bottom: 80px;
+  display: inline-block;
+  
+  /* Text Color & Masking */
+  color: #b5b5b5a4; /* Subdued grey with transparency */
+  background-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* The "Shine" Gradient */
+  background-image: linear-gradient(
+    120deg, 
+    rgba(255, 255, 255, 0) 40%, 
+    rgba(255, 255, 255, 0.8) 50%, 
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+
+  /* Animation */
+  animation: shine 4s linear infinite;
+  
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 .aboutContainerMain{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
 }
 
@@ -419,10 +448,11 @@
 .aboutPGiorgi {
   font-size: 48px;
   padding-bottom: 40px;
+  font-weight: 600;
 }
 
 .aboutPWeb {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.80);
 }
@@ -431,7 +461,7 @@
   width: 100%;
   padding-right: 100px;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 20px;
   gap: 12px;
   display: flex;
   flex-direction: column;
@@ -443,8 +473,7 @@
 .aboutPStop {
   font-size: 36px;
   color: #30c495;
-  margin-top: 40px;
-  margin: 40px auto;
+  margin: 60px auto;
 } 
 
 

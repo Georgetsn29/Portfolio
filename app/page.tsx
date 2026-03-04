@@ -517,7 +517,7 @@ export default function Page() {
       <div className={styles.aboutContainerMain}>
         <div className={styles.aboutContainerLeft}>
           <div className={styles.aboutContainerLeftIn}>
-            <p className={styles.aboutPGiorgi} data-aos="fade-up">I&apos;m Giorgi</p>
+            <p className={styles.aboutPGiorgi} data-aos="fade-up">I&apos;m Giorgi.</p>
             <p className={styles.aboutPWeb} data-aos="fade-up">Web developer with a relentless drive for excellence, skilled in creating and maintaining functional and responsive web applications and websites.</p>
           </div>
           </div>

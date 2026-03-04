@@ -523,7 +523,7 @@ export default function Page() {
           </div>
           <div className={styles.aboutContainerRight}>
             <p className={styles.aboutPYear} data-aos="fade-up">A {currentAge} year old junior Full Stack Web Developer based in Tbilisi, Georgia. Dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.</p>
-            <hr data-aos="fade-left" />
+            <hr style={{ border: "0", borderTop: "2px solid #6a7282" }} data-aos="fade-left" />
             <p className={styles.aboutPAproach} data-aos="fade-up">My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.</p>
           </div>
       </div>

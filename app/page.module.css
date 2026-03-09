@@ -325,7 +325,21 @@
 }
 
 .devText strong {
-  color: #abafb4;
+  background-image: linear-gradient(
+    to right, 
+    #30c495 50%, 
+    #abafb4 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.devText:hover strong {
+  background-position: 0 0;
 }
 
 .resume {
@@ -932,15 +946,33 @@
   font-weight: bold;
   line-height: 25px;
 }
-
+/* 
 .footerEmail {
   font-size: 36px;
   color: #ffffff;
+} */
+
+.footerEmail {
+  font-size: 36px;
   margin-block: 20px 40px;
+  background-image: linear-gradient(
+    to right, 
+    #30c495 50%, 
+    rgba(255, 255, 255, 0.8) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footerEmail:hover {
+  background-position: 0 0;
   text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }
 
 .footerGit {

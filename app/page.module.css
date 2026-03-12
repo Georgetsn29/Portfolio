@@ -12,7 +12,7 @@
   right: 0;
   z-index: 30;
   width: 500px; /* w-64 */
-  background-color: #22b184f2; /* bg-indigo-800 */
+  background-color: #007e70ee;
   color: white;
   transform: translateX(100%); /* Start off-screen */
   transition: transform 300ms ease-in-out;

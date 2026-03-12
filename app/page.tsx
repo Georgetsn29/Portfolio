@@ -16,7 +16,7 @@ const calculateAge = (birthYear: number): number => {
 
   let age = currentYear - birthYear;
 
-  const birthdayMonth = 6; 
+  const birthdayMonth = 5; 
   const birthdayDay = 29;
 
   const currentMonth = today.getMonth();

@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   basePath: "/Portfolio",
-
   
   images: {
     unoptimized: true,

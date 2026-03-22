@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Giorgi's Portfolio",
     description: "Check out my work and projects.",
-    images: ['/Portfolio/lo.png'], // falls back to metadataBase
+    images: ['/Portfolio/public/img/lo.png'], // falls back to metadataBase
   },
 };
 

@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ka">
       <head>
-        <link rel="icon" href="img/odot.png" />
+        <link rel="icon" href="img/lo.png" />
       </head>
       <body>
 		<CustomCursor />

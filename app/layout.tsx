@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Giorgi's Portfolio",
     images: [
       {
-        url: '/Portfolio/lo.png', // path to your logo (placed in your public/ folder)
+        url: '/public/img/lo.png', // path to your logo (placed in your public/ folder)
         width: 1200,
         height: 630,
         alt: 'Giorgi Portfolio Logo',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Giorgi's Portfolio",
     description: "Check out my work and projects.",
-    images: ['/Portfolio/public/img/lo.png'], // falls back to metadataBase
+    images: ['/public/img/lo.png'], // falls back to metadataBase
   },
 };
 

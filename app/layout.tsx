@@ -3,35 +3,33 @@ import type { ReactNode } from 'react';
 import { Josefin_Sans } from 'next/font/google'
 import CustomCursor from './components/cursor/CustomCursor';
 
-import type { Metadata } from 'next';
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: "Giorgi's Portfolio",
-  description: "Check out my work and projects.",
-  // 1. Set metadataBase so Next.js can calculate absolute image paths
-  metadataBase: new URL('https://georgetsn29.github.io'),
+  description: "Check out my web development projects.",
   openGraph: {
     title: "Giorgi's Portfolio",
-    description: "Check out my work and projects.",
+    description: "Check out my web development projects.",
     url: 'https://georgetsn29.github.io/Portfolio/',
     siteName: "Giorgi's Portfolio",
     images: [
       {
-        url: '/public/img/lo.png', // path to your logo (placed in your public/ folder)
+        url: 'https://georgetsn29.github.io/Portfolio/public/img/lo.png', // Must be an absolute URL
         width: 1200,
         height: 630,
-        alt: 'Giorgi Portfolio Logo',
       },
     ],
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Giorgi's Portfolio",
-    description: "Check out my work and projects.",
-    images: ['/public/img/lo.png'], // falls back to metadataBase
+    description: "Check out my web development projects.",
+    images: ['https://georgetsn29.github.io/Portfolio/public/img/lo.png'], 
   },
-};
+}
 
 
 const josefinSans = Josefin_Sans({

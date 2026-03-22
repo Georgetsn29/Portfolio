@@ -85,7 +85,8 @@ const FADE_DELAY = 100;
 const HOLD_TIME = 800;
 
 const TOTAL_LETTERS = LETTERS.length;
-const TOTAL_STEPS = TOTAL_LETTERS * 2 + 1; 
+// Steps: 1-6 (Reveal), 7 (Hold), 8 (Start Exit)
+const TOTAL_STEPS = TOTAL_LETTERS + 2;
 
   const letterStyles = [
     { color: '#ffffff' }
@@ -283,30 +284,50 @@ export default function Page() {
     };
 
     const SplashScreen = (
-      <div
-          className={`splash-screen ${currentStep >= TOTAL_STEPS - 1 ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
-      >
-          <div className="george-text-container">
-              {LETTERS.map((letter, index) => {
-                  const { opacity, transform } = getLetterVisuals(index);
+  <div className={`${styles.splashScreen} ${currentStep >= TOTAL_STEPS - 1 ? styles.exitActive : ''}`}>
+    
+    {/* Background Columns */}
+    <div className={styles.columnContainer}>
+      {[...Array(10)].map((_, i) => (
+        <div 
+          key={i} 
+          className={styles.column} 
+          style={{ 
+            // Staggered delay for the bars
+            transitionDelay: `${i * 0.04}s` 
+          }} 
+        />
+      ))}
+    </div>
 
-                  return (
-                      <span
-                          key={index}
-                          className="letter"
-                          style={{ 
-                              opacity: opacity,
-                              transform: transform,
-                              ...letterStyles[index % letterStyles.length],
-                          }}
-                      >
-                          {letter}
-                      </span>
-                  );
-              })}
-          </div>
-      </div>
-  );
+    {/* Text Layer */}
+    <div className={styles.georgeTextContainer}>
+      {LETTERS.map((letter, index) => {
+        const isRevealed = currentStep > index;
+        const isExiting = currentStep >= TOTAL_STEPS - 1;
+
+        return (
+          <span
+            key={index}
+            className={styles.letter}
+            style={{ 
+              transform: isExiting 
+                ? 'translateY(-150%)' // Pushes text UP past the top edge
+                : isRevealed 
+                  ? 'translateY(0%)' 
+                  : 'translateY(110%)',
+              opacity: isRevealed ? 1 : 0,
+              // Stagger the text exit to match the "wave" of the lines
+              transitionDelay: isExiting ? `${index * 0.03}s` : '0s'
+            }}
+          >
+            {letter}
+          </span>
+        );
+      })}
+    </div>
+  </div>
+);
 
 
 

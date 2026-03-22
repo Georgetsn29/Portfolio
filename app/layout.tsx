@@ -4,7 +4,7 @@ import { Josefin_Sans } from 'next/font/google'
 import CustomCursor from './components/cursor/CustomCursor';
 
 export const metadata = {
-  title: 'Portfolio',
+  title: "Giorgi's Portfolio",
   description: '',
 };
 

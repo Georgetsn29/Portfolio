@@ -129,8 +129,8 @@ const techStackData = [
   {
     category: "Studying",
     items: [
-      { name: "Hono", url: "/Portfolio/img/studying/Hono.webp" },
-      { name: "Flutter", url: "/Portfolio/img/studying/Flutter.webp" },
+      { name: "Hono", url: "/img/studying/Hono.webp" },
+      { name: "Flutter", url: "/img/studying/Flutter.webp" },
     ]
   }
 ];

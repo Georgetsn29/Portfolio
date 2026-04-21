@@ -96,41 +96,42 @@ const techStackData = [
   {
     category: "Frontend",
     items: [
-      { name: "HTML", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132094/tech-stack/e4ihbttbjc9fnqxtqfjk.webp" },
-      { name: "CSS", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132123/tech-stack/a8amf3ew3ncwhmgqp4ap.webp" },
-      { name: "JavaScript", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132141/tech-stack/it9gcd7lykyi0g8jydp3.webp" },
-      { name: "TypeScript", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132203/tech-stack/jiijjitzpqqlprtajrhk.webp" },
-      { name: "React", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132226/tech-stack/g5935sduhdm81jtm4jom.webp" },
-      { name: "Next.Js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133323/tech-stack/do3gzkhaca5bdyoc29u0.webp" },
-      { name: "Tailwind CSS", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132308/tech-stack/jad7xbpdj86iun2ltk2z.webp" },
+      { name: "HTML", url: "/img/frontend/HTML.webp" },
+      { name: "CSS", url: "/img/frontend/CSS.webp" },
+      { name: "JavaScript", url: "/img/frontend/JavaScript.webp" },
+      { name: "TypeScript", url: "/img/frontend/TypeScript.webp" },
+      { name: "React", url: "/img/frontend/React.webp" },
+      { name: "Next.Js", url: "/img/frontend/Next.webp" },
+      { name: "Tailwind CSS", url: "/img/frontend/Tailwind.webp" },
     ]
   },
   {
     category: "Backend",
     items: [
-       { name: "Node.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132513/tech-stack/zynfozlvk9xzpfgpio7l.webp" },
-      { name: "Express.js", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132715/tech-stack/cawxocttm1iih5znufe2.webp" },
-      { name: "MongoDB", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132785/tech-stack/reepwudqzpvwkgw6k9bq.webp" },
-      { name: "Supabase", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132759/tech-stack/vqocrcbbkvljocxjosxd.webp" },
+       { name: "Node.js", url: "/img/backend/Node.webp" },
+      { name: "Express.js", url: "/img/backend/Express.webp" },
+      { name: "MongoDB", url: "/img/backend/MongoDB.webp" },
+      { name: "Supabase", url: "/img/backend/Supabase.webp" },
     ]
   },
   {
     category: "Tools",
     items: [
-      { name: "Git", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132924/tech-stack/mhcfcbwo2jbswn71fibm.webp" },
-      { name: "GitHub", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132950/tech-stack/vwvkzjuycvulgcexomll.webp" },
-      { name: "Postman", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132971/tech-stack/hsxezphnnbqbgrt3iaa4.webp" },
-      { name: "VSCODE", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133012/tech-stack/z22vae593l42i5b0owut.webp" },
-      { name: "NPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133030/tech-stack/frmotw4echmb7rodvhzq.webp" },
-      { name: "PNPM", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133049/tech-stack/kbbiqhq3mcujtlrobiiu.webp" },
-      { name: "Yarn", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761133111/tech-stack/lsuwj4a4wjjy9b80zhlh.webp" },
+      { name: "Git", url: "/img/tools/Git.webp" },
+      { name: "GitHub", url: "/img/tools/GitHub.webp" },
+      { name: "Postman", url: "/img/tools/Postman.webp" },
+      { name: "VSCODE", url: "/img/tools/VSCODE.webp" },
+      { name: "NPM", url: "/img/tools/NPM.webp" },
+      { name: "PNPM", url: "/img/tools/PNPM.webp" },
+      { name: "Yarn", url: "/img/tools/Yarn.webp" },
       // { name: "Bun", url: "https://res.cloudinary.com/damompp1b/image/upload/v1762380323/tech-stack/itdtbhlknbmh8ezmv6kk.webp" },
     ]
   },
   {
     category: "Studying",
     items: [
-      { name: "Hono", url: "https://res.cloudinary.com/damompp1b/image/upload/v1761132881/tech-stack/uwcz57v8ialn8a7uhfd5.webp" },
+      { name: "Hono", url: "/img/studying/Hono.webp" },
+      { name: "Flutter", url: "/img/studying/Flutter.webp" },
     ]
   }
 ];
@@ -641,9 +642,17 @@ export default function Page() {
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <a  href="https://ibsu.edu.ge/en/" target="_blank" rel="noreferrer" className={styles.textTitleA}>International Black Sea University</a>
           <p className={styles.textSubtitle}>Computer Science</p>
-          <p className={styles.textDate}>08/2021 - On Going</p>
+          <p className={styles.textDate}>08/2021 - Present</p>
         </div>
       </div>
+
+      {/* <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
+        <div className={styles.experienceItem} style={dynamicItemStyle}>
+          <a  href="https://edu.doit.gov.ge/courses/5597a1ec-6c71-4413-8938-d8f64d67caef" target="_blank" rel="noreferrer" className={styles.textTitleB}>Do It in Georgia <span style={{color: '#fcba03'}}>X</span> Mziuri</a>
+          <p className={styles.textSubtitle}>Full Stack WEB Development - Course</p>
+          <p className={styles.textDate}>05/2026 - Present</p>
+        </div>
+      </div> */}
     </section>
 
     <section id="experience" className={styles.experience}>

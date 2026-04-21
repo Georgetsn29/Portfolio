@@ -97,41 +97,40 @@ const techStackData = [
     category: "Frontend",
     items: [
       { name: "HTML", url: "/Portfolio/img/frontend/HTML.webp" },
-      { name: "CSS", url: "/img/frontend/CSS.webp" },
-      { name: "JavaScript", url: "/img/frontend/JavaScript.webp" },
-      { name: "TypeScript", url: "/img/frontend/TypeScript.webp" },
-      { name: "React", url: "/img/frontend/React.webp" },
-      { name: "Next.Js", url: "/img/frontend/Next.webp" },
-      { name: "Tailwind CSS", url: "/img/frontend/Tailwind.webp" },
+      { name: "CSS", url: "/Portfolio/img/frontend/CSS.webp" },
+      { name: "JavaScript", url: "/Portfolio/img/frontend/JavaScript.webp" },
+      { name: "TypeScript", url: "/Portfolio/img/frontend/TypeScript.webp" },
+      { name: "React", url: "/Portfolio/img/frontend/React.webp" },
+      { name: "Next.Js", url: "/Portfolio/img/frontend/Next.webp" },
+      { name: "Tailwind CSS", url: "/Portfolio/img/frontend/Tailwind.webp" },
     ]
   },
   {
     category: "Backend",
     items: [
-       { name: "Node.js", url: "/img/backend/Node.webp" },
-      { name: "Express.js", url: "/img/backend/Express.webp" },
-      { name: "MongoDB", url: "/img/backend/MongoDB.webp" },
-      { name: "Supabase", url: "/img/backend/Supabase.webp" },
+       { name: "Node.js", url: "/Portfolio/img/backend/Node.webp" },
+      { name: "Express.js", url: "/Portfolio/img/backend/Express.webp" },
+      { name: "MongoDB", url: "/Portfolio/img/backend/MongoDB.webp" },
+      { name: "Supabase", url: "/Portfolio/img/backend/Supabase.webp" },
     ]
   },
   {
     category: "Tools",
     items: [
-      { name: "Git", url: "/img/tools/Git.webp" },
-      { name: "GitHub", url: "/img/tools/GitHub.webp" },
-      { name: "Postman", url: "/img/tools/Postman.webp" },
-      { name: "VSCODE", url: "/img/tools/VSCODE.webp" },
-      { name: "NPM", url: "/img/tools/NPM.webp" },
-      { name: "PNPM", url: "/img/tools/PNPM.webp" },
-      { name: "Yarn", url: "/img/tools/Yarn.webp" },
-      // { name: "Bun", url: "https://res.cloudinary.com/damompp1b/image/upload/v1762380323/tech-stack/itdtbhlknbmh8ezmv6kk.webp" },
+      { name: "Git", url: "/Portfolio/img/tools/Git.webp" },
+      { name: "GitHub", url: "/Portfolio/img/tools/GitHub.webp" },
+      { name: "Postman", url: "/Portfolio/img/tools/Postman.webp" },
+      { name: "VSCODE", url: "/Portfolio/img/tools/VSCODE.webp" },
+      { name: "NPM", url: "/Portfolio/img/tools/NPM.webp" },
+      { name: "PNPM", url: "/Portfolio/img/tools/PNPM.webp" },
+      { name: "Yarn", url: "/Portfolio/img/tools/Yarn.webp" },
     ]
   },
   {
     category: "Studying",
     items: [
-      { name: "Hono", url: "/img/studying/Hono.webp" },
-      { name: "Flutter", url: "/img/studying/Flutter.webp" },
+      { name: "Hono", url: "/Portfolio/img/studying/Hono.webp" },
+      { name: "Flutter", url: "/Portfolio/img/studying/Flutter.webp" },
     ]
   }
 ];

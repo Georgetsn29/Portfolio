@@ -96,12 +96,12 @@ const techStackData = [
   {
     category: "Frontend",
     items: [
-      { name: "HTML", url: "public\img\frontend\HTML.webp" },
-      { name: "CSS", url: "public\img\frontend\CSS.webp" },
-      { name: "JavaScript", url: "public\img\frontend\JavaScript.webp" },
-      { name: "TypeScript", url: "public\img\frontend\TypeScript.webp" },
-      { name: "React", url: "public\img\frontend\React.webp" },
-      { name: "Next.Js", url: "public\img\frontend\Next.webp" },
+      { name: "HTML", url: "/Portfolio/img/frontend/HTML.webp" },
+      { name: "CSS", url: "/img/frontend/CSS.webp" },
+      { name: "JavaScript", url: "/img/frontend/JavaScript.webp" },
+      { name: "TypeScript", url: "/img/frontend/TypeScript.webp" },
+      { name: "React", url: "/img/frontend/React.webp" },
+      { name: "Next.Js", url: "/img/frontend/Next.webp" },
       { name: "Tailwind CSS", url: "/img/frontend/Tailwind.webp" },
     ]
   },

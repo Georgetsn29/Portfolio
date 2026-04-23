@@ -697,7 +697,7 @@ export default function Page() {
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <p className={styles.textTitle}>UpWork</p>
           <p className={styles.textSubtitle}>Junior Full Stack Developer</p>
-          <p className={styles.textDate}>01/2026 - On Going</p>
+          <p className={styles.textDate}>02/2026 - Present</p>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import styles from "./page.module.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+// import "aos/dist/aos.css"; 
 import { Target } from "lucide-react";
 import { useRouter } from 'next/navigation';
 
@@ -645,13 +645,14 @@ export default function Page() {
         </div>
       </div>
 
-      {/* <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
+      <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
-          <a  href="https://edu.doit.gov.ge/courses/5597a1ec-6c71-4413-8938-d8f64d67caef" target="_blank" rel="noreferrer" className={styles.textTitleB}>Do It in Georgia <span style={{color: '#fcba03'}}>X</span> Mziuri</a>
+          <a  href="https://doit.gov.ge/" target="_blank" rel="noreferrer" className={styles.textTitleB}>Do It in Georgia <span style={{color: '#fcba03'}}>X</span> Mziuri</a>
           <p className={styles.textSubtitle}>Full Stack WEB Development - Course</p>
           <p className={styles.textDate}>05/2026 - Present</p>
         </div>
-      </div> */}
+      </div>
+
     </section>
 
     <section id="experience" className={styles.experience}>
@@ -696,7 +697,7 @@ export default function Page() {
       <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <p className={styles.textTitle}>Freelancer</p>
-          <p className={styles.textSubtitle}>Junior Full Stack Developer</p>
+          <p className={styles.textSubtitle}>Junior Full Stack WEB Developer</p>
           <p className={styles.textDate}>02/2026 - Present</p>
         </div>
       </div>

@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import styles from "./page.module.css";
 import AOS from "aos";
-// import "aos/dist/aos.css"; 
+import "aos/dist/aos.css"; 
 import { Target } from "lucide-react";
 import { useRouter } from 'next/navigation';
 

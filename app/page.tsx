@@ -733,7 +733,7 @@ export default function Page() {
         <h2 className={styles.myStackTitle}>SELECTED PROJECTS</h2>
       </div>
       <div className={styles.containerProjects} data-aos="fade-up">
-        <a href="https://sfbsolutions.ge/" target="#" className={styles.projectCard}>
+        <a href="https://georgetsn29.github.io/sfbsolutions.ge/" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           
           {/* Number */}

@@ -860,7 +860,7 @@ export default function Page() {
 
           <div className={styles.projectDetails}>
             <p className={styles.projectTitle}>
-              Gita <span style={{color: '#fcba03'}}>X</span> Mziuri Front-end Project
+              Gita <span style={{color: '#fcba03'}}>X</span> Mziuri
               
               <span className={styles.iconWrapperProjects}>
                 <svg 
@@ -890,7 +890,13 @@ export default function Page() {
               </span>
             </p>
 
-            <div className={styles.tagsContainer}>
+            <br />  
+            <div className={styles.tag}>
+              <span style={{color: '#fcba03', fontSize: '18px'}}>Front-end Project</span>
+            </div>
+            <br />
+
+            <div className={styles.tagsContainer}>             
               <div className={styles.tag}>
                 <span>HTML</span>
                 <span className={styles.dot}></span>

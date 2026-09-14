@@ -852,15 +852,15 @@ export default function Page() {
       </a>
       </div>
 
-      {/* <div className={styles.containerProjects} data-aos="fade-up">
-        <a href="" target="#" className={styles.projectCard}>
+      <div className={styles.containerProjects} data-aos="fade-up">
+        <a href="https://georgetsn29.github.io/Gita-Mziuri-frontend-project/index.html" target="#" className={styles.projectCard}>
         <div className={styles.cardContent}>
           
           <div className={styles.projectNumber}>_03.</div>
 
           <div className={styles.projectDetails}>
             <p className={styles.projectTitle}>
-              MZE
+              Gita <span style={{color: '#fcba03'}}>X</span> Mziuri Front-end Project
               
               <span className={styles.iconWrapperProjects}>
                 <svg 
@@ -892,11 +892,7 @@ export default function Page() {
 
             <div className={styles.tagsContainer}>
               <div className={styles.tag}>
-                <span>Next</span>
-                <span className={styles.dot}></span>
-              </div>
-              <div className={styles.tag}>
-                <span>TypeScript</span>
+                <span>HTML</span>
                 <span className={styles.dot}></span>
               </div>
               <div className={styles.tag}>
@@ -904,13 +900,17 @@ export default function Page() {
                 <span className={styles.dot}></span>
               </div>
               <div className={styles.tag}>
-                <span>Node JS</span>
+                <span>Sass</span>
+                <span className={styles.dot}></span>
+              </div>
+              <div className={styles.tag}>
+                <span>JS</span>
               </div>
             </div>
           </div>
         </div>
       </a>
-      </div> */}
+      </div>
       
     </section>
 

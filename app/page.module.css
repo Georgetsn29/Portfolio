@@ -762,6 +762,22 @@
   transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.projectTitleLittle {
+  font-size: 18px;
+  background-image: linear-gradient(
+    to right, 
+    #30c495e9 50%, 
+    #fcba03 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0; /* Start from right (White) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  transition: background-position 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .textSubtitle {
   font-size: 1.875rem;
   line-height: 2.25rem; 
@@ -856,6 +872,10 @@
 
 /* Hover: Slide gradient to left (Primary Color) */
 .projectCard:hover .projectTitle {
+  background-position: 0 0;
+}
+
+.projectCard:hover .projectTitleLittle {
   background-position: 0 0;
 }
 

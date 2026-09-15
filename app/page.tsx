@@ -892,17 +892,13 @@ export default function Page() {
 
             <br />  
             <div className={styles.tag}>
-              <span style={{color: '#fcba03', fontSize: '18px'}}>Front-end Project</span>
+              <span className={styles.projectTitleLittle}>Front-end Project</span>
             </div>
             <br />
 
             <div className={styles.tagsContainer}>             
               <div className={styles.tag}>
                 <span>HTML</span>
-                <span className={styles.dot}></span>
-              </div>
-              <div className={styles.tag}>
-                <span>CSS</span>
                 <span className={styles.dot}></span>
               </div>
               <div className={styles.tag}>

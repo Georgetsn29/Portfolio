@@ -658,11 +658,11 @@ export default function Page() {
             <p className={styles.textDate}>05/2026 - Present</p>
 
             <button className={styles.textButton} onClick={() => setActiveImg("img/front-certificate-img.png")}>
-              Front-end Certificate
+              Front end Certificate
             </button>
 
             {/* <button className={styles.textButton} onClick={() => setActiveImg("img/back-certificate-img.png")}>
-              Back-end certificate
+              BackEnd certificate
             </button> */}
           </div>
           

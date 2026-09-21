@@ -658,7 +658,7 @@ export default function Page() {
             <p className={styles.textDate}>05/2026 - Present</p>
 
             <button className={styles.textButton} onClick={() => setActiveImg("img/front-certificate-img.png")}>
-              Front-end certificate
+              Front-end Certificate
             </button>
 
             {/* <button className={styles.textButton} onClick={() => setActiveImg("img/back-certificate-img.png")}>

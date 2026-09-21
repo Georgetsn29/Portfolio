@@ -1,7 +1,9 @@
-import './globals.css';
-import type { ReactNode } from 'react';
-import { Josefin_Sans } from 'next/font/google'
-import CustomCursor from './components/cursor/CustomCursor';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./globals.css";
+import type { ReactNode } from "react";
+import { Josefin_Sans } from "next/font/google";
+import CustomCursor from "./components/cursor/CustomCursor";
+import BootstrapClient from "./components/BootstrapClient";
 
 import { Metadata } from 'next'
 

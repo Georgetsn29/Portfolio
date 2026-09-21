@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; 
 import { Target } from "lucide-react";
 import { useRouter } from 'next/navigation';
+import Modal from "./components/certificate_modal/Modal";
 
 
 const YOUR_BIRTH_YEAR: number = 2003; 
@@ -141,6 +142,9 @@ export default function Page() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [scrollProgress, setScrollProgress] = useState(0);
     const closeSidebar = () => setIsSidebarOpen(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen2, setIsModalOpen2] = useState(false);
+    const [activeImg, setActiveImg] = useState<string | null>(null);
 
   useEffect(() => {
     // Safety check to ensure we are running in a browser environment
@@ -649,8 +653,27 @@ export default function Page() {
         <div className={styles.experienceItem} style={dynamicItemStyle}>
           <a  href="https://doit.gov.ge/" target="_blank" rel="noreferrer" className={styles.textTitleB}>Do It in Georgia <span style={{color: '#fcba03'}}>X</span> Mziuri</a>
           <p className={styles.textSubtitle}>Full Stack WEB Development - Course</p>
-          <p className={styles.textDate}>05/2026 - Present</p>
+
+          <div className={styles.experience_wrapper}>
+            <p className={styles.textDate}>05/2026 - Present</p>
+
+            <button className={styles.textButton} onClick={() => setActiveImg("img/front-certificate-img.png")}>
+              Front-end certificate
+            </button>
+
+            {/* <button className={styles.textButton} onClick={() => setActiveImg("img/back-certificate-img.png")}>
+              Back-end certificate
+            </button> */}
+          </div>
+          
         </div>
+
+        <Modal
+          isOpen={activeImg !== null}
+          onClose={() => setActiveImg(null)}
+          imgSrc={activeImg ?? ""}
+          alt="Certificate"
+        />
       </div>
 
     </section>

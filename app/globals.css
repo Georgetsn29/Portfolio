@@ -32,6 +32,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .progress-track {
     position: fixed;
     top: 50%;

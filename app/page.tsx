@@ -915,7 +915,7 @@ export default function Page() {
 
             <br />  
             <div className={styles.tag}>
-              <span className={styles.projectTitleLittle}>Front-end Project</span>
+              <span className={styles.projectTitleLittle}>Front end Project</span>
             </div>
             <br />
 

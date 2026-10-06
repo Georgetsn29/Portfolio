@@ -709,7 +709,7 @@ export default function Page() {
       </div>
       <div className={styles.gridContainer} data-aos="fade-up">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
-          <p className={styles.textTitle}>Soft Master Trade</p>
+          <a href="https://smt.ge/ka" target="_blank" className={styles.textTitle}>Soft Master Trade</a>
           <p className={styles.textSubtitle}>IT Specialist</p>
           {/* <p className={styles.textDate}>05&#47;2025 &#8209; 08&#47;2025</p> */}
           <span className={styles.appleLink}>
@@ -719,9 +719,9 @@ export default function Page() {
       </div>
       <div className={styles.gridContainer} data-aos="fade-up" data-aos-delay="300">
         <div className={styles.experienceItem} style={dynamicItemStyle}>
-          <p className={styles.textTitle}>Freelancer</p>
-          <p className={styles.textSubtitle}>Junior Full Stack WEB Developer</p>
-          <p className={styles.textDate}>02/2026 - Present</p>
+          <a href="https://ag.ge/" target="_blank" className={styles.textTitle}>Georgian Amelioration</a>
+          <p className={styles.textSubtitle}>Junior Backend Developer</p>
+          <p className={styles.textDate}>10/2026 - Present</p>
         </div>
       </div>
     </section>

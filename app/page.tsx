@@ -707,7 +707,8 @@ export default function Page() {
               href="https://smt.ge/en"
               target="_blank"
               rel="noreferrer"
-              className={styles.textTitle}
+              className={styles.textTitleC}
+              
             >
               Soft Master Trade
             </a>
@@ -726,7 +727,7 @@ export default function Page() {
               href="https://ag.ge/"
               target="_blank"
               rel="noreferrer"
-              className={styles.textTitle}
+              className={styles.textTitleD}
             >
               Georgian Amelioration
             </a>

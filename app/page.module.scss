@@ -848,6 +848,28 @@
   }
 }
 
+.textTitleC {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @include slide-text($smt-purple, $white-80);
+
+  &:hover {
+    @include slide-text-hover;
+    @include underline-hover;
+  }
+}
+
+.textTitleD {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @include slide-text($ag-blue, $white-80);
+
+  &:hover {
+    @include slide-text-hover;
+    @include underline-hover;
+  }
+}
+
 .textSubtitle {
   font-size: 1.875rem;
   line-height: 1;

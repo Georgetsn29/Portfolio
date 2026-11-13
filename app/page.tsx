@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import styles from "./page.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -236,7 +236,25 @@ export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentStep, setCurrentStep] = useState(0);
 
+  const pusherRef = useRef<HTMLDivElement>(null);
+
   const closeSidebar = () => setIsSidebarOpen(false);
+
+  // Scale the page down around the centre of the *visible* viewport,
+  // not the centre of the whole (very tall) document.
+  const toggleSidebar = () => {
+    const pusher = pusherRef.current;
+    if (!isSidebarOpen && pusher) {
+      // Position of the visible viewport inside the pusher's own coordinates
+      const top = window.scrollY - (pusher.getBoundingClientRect().top + window.scrollY);
+      const bottom = pusher.offsetHeight - (top + window.innerHeight);
+      pusher.style.transformOrigin = `50% ${top + window.innerHeight / 2}px`;
+      // Hide everything outside the visible area, so only the "card" scales down.
+      // 14.4px radius → 12px after scaling, matching the particle card.
+      pusher.style.clipPath = `inset(${top}px 0 ${bottom}px 0 round 14.4px)`;
+    }
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   // Strip any #hash from the address bar on load
   useEffect(() => {
@@ -282,10 +300,12 @@ export default function Page() {
   const scrollbarWidth =
     window.innerWidth - document.documentElement.clientWidth;
 
+  document.body.classList.add("sidebar-open"); // scales the particle background (globals.css)
   document.body.style.overflow = "hidden";
   document.body.style.paddingRight = `${scrollbarWidth}px`; // stops the page jumping sideways
 
   return () => {
+    document.body.classList.remove("sidebar-open");
     document.body.style.overflow = overflow;
     document.body.style.paddingRight = paddingRight;
   };
@@ -314,6 +334,7 @@ export default function Page() {
   }, [updateScrollProgress]);
 
   const translationPercentage = 100 - scrollProgress;
+
   const currentAge = calculateAge(YOUR_BIRTH_YEAR);
 
   // Splash screen timing
@@ -387,7 +408,7 @@ export default function Page() {
       <div className={styles.menuButtonWrapper}>
         <AnimatedMenuButton
           isOpen={isSidebarOpen}
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          onClick={toggleSidebar}
         />
       </div>
 
@@ -474,6 +495,10 @@ export default function Page() {
         />
       )}
 
+      {/* --- Fixed page elements: full-viewport layer that scales with the page --- */}
+      <div
+        className={`${styles.fixedLayer} ${isSidebarOpen ? styles.pusherOpen : ""}`}
+      >
       {/* --- Scroll progress (make sure .progress-track is in globals.css) --- */}
       <div className="progress-track">
         <div
@@ -496,8 +521,20 @@ export default function Page() {
       >
         {copied ? "Copied!" : EMAIL}
       </a>
+      </div>
 
       {/* =====================  HOME  ===================== */}
+      {/* --- Pusher: page content that scales down when the sidebar opens --- */}
+      <div
+        ref={pusherRef}
+        className={`${styles.pusher} ${isSidebarOpen ? styles.pusherOpen : ""}`}
+        onTransitionEnd={(e) => {
+          // Remove the clip once the page has scaled back to full size
+          if (e.target === e.currentTarget && !isSidebarOpen) {
+            e.currentTarget.style.clipPath = "";
+          }
+        }}
+      >
       <section id="home" className={styles.home}>
         <div className={styles.left}>
           <div>
@@ -880,6 +917,7 @@ export default function Page() {
           </a>
         </div>
       </section>
+      </div>
     </>
   );
 }

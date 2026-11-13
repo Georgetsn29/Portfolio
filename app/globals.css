@@ -89,6 +89,28 @@ a {
     left: 0;
     z-index: -1; /* Pushes the particles behind the main content */
 }
+
+/* Scale the particle background with the page when the sidebar is open.
+   The particle layer carries the page's black background, so when it shrinks
+   the body colour below shows around the scaled page. */
+body {
+    transition: background-color 500ms ease;
+}
+
+body.sidebar-open {
+    background-color: #005d52; /* colour around the scaled page */
+}
+
+#particle-container {
+    background-color: black;
+    transition: transform 500ms ease, border-radius 500ms ease, box-shadow 500ms ease;
+}
+
+body.sidebar-open #particle-container {
+    transform: scale(0.833);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
 /* --- Base Particle Styles --- */
 .particle {
 	position: absolute;

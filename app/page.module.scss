@@ -18,8 +18,8 @@
   width: 500px;
   background-color: $sidebar-bg;
   color: white;
-  transform: translateX(100%); // start off-screen
-  transition: transform 300ms ease-in-out;
+  transform: translate3d(100%, 0, 0); // start off-screen
+  transition: transform 500ms ease;
 
   @include mobile {
     width: 350px;
@@ -27,7 +27,38 @@
 }
 
 .open {
-  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* --- Pusher (Codrops "Scale Down Pusher" effect) ---
+   The page content shrinks back while the menu slides in.
+   translateZ(-300px) at perspective 1500px is exactly scale(1500/1800) ≈ 0.833,
+   so we use the equivalent 2D scale. No transform when closed, otherwise
+   position: fixed children (e.g. the certificate modal) would break.
+   transform-origin is set from JS to the middle of the current viewport. */
+.pusher {
+  width: 100%;
+  transition: transform 500ms ease;
+}
+
+.pusherOpen {
+  transform: scale(0.833);
+  pointer-events: none;
+}
+
+/* Full-viewport layer for the fixed page elements (side email, progress bar).
+   Its default transform-origin is the viewport centre, so it shrinks in step
+   with the pusher. */
+.fixedLayer {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  transition: transform 500ms ease;
+
+  > * {
+    pointer-events: auto;
+  }
 }
 
 .sidebarContent {
@@ -196,7 +227,12 @@
   background-color: black;
   opacity: 0.5;
   z-index: 20;
-  transition: opacity 300ms;
+  animation: backdropFadeIn 500ms ease forwards;
+}
+
+@keyframes backdropFadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.5; }
 }
 
 /* =========================================================

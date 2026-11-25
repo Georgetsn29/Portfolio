@@ -125,6 +125,11 @@ const AnimatedMenuButton = ({
     />
     <div
       className={`${styles.bar} ${
+        isOpen ? styles.barMiddleOpen : styles.barMiddleClosed
+      }`}
+    />
+    <div
+      className={`${styles.bar} ${
         isOpen ? styles.barBottomOpen : styles.barBottomClosed
       }`}
     />
@@ -239,6 +244,26 @@ export default function Page() {
   const pusherRef = useRef<HTMLDivElement>(null);
 
   const closeSidebar = () => setIsSidebarOpen(false);
+
+  // Section to scroll to once the page has scaled back to full size
+  const pendingScrollRef = useRef<string | null>(null);
+
+  const scrollToPending = () => {
+    const id = pendingScrollRef.current;
+    pendingScrollRef.current = null;
+    if (!id) return;
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  // Menu links: close the sidebar first, then scroll once the scale-back
+  // transition has finished (scrolling while scaled lands at the wrong spot).
+  const handleMenuClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    pendingScrollRef.current = href.replace("#", "");
+    setIsSidebarOpen(false);
+    // Fallback in case transitionend doesn't fire
+    setTimeout(scrollToPending, 600);
+  };
 
   // Scale the page down around the centre of the *visible* viewport,
   // not the centre of the whole (very tall) document.
@@ -459,7 +484,7 @@ export default function Page() {
                   <li key={item.href}>
                     <a
                       href={item.href}
-                      onClick={closeSidebar}
+                      onClick={(e) => handleMenuClick(e, item.href)}
                       className={styles.navButton}
                     >
                       <span className={`${styles.iconContainer} ${item.iconClass}`}>
@@ -532,6 +557,7 @@ export default function Page() {
           // Remove the clip once the page has scaled back to full size
           if (e.target === e.currentTarget && !isSidebarOpen) {
             e.currentTarget.style.clipPath = "";
+            scrollToPending();
           }
         }}
       >
